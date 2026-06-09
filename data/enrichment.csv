@@ -1,0 +1,30 @@
+id,bodyType,segment,seats,imageUrl,officialUrl
+tesla-model-3-lr-highland,Sedan,D-segment,5,,https://www.tesla.com/model3
+tesla-model-3-standard,Sedan,D-segment,5,,https://www.tesla.com/model3
+tesla-model-3-sr-plus,Sedan,D-segment,5,,https://www.tesla.com/model3
+tesla-model-3-performance-highland,Sedan,D-segment,5,,https://www.tesla.com/model3
+tesla-model-3-performance,Sedan,D-segment,5,,https://www.tesla.com/model3
+tesla-model-3-performance-2022,Sedan,D-segment,5,,https://www.tesla.com/model3
+tesla-model-y-lr-juniper,SUV,E-segment,5,,https://www.tesla.com/modely
+tesla-model-y-performance-juniper,SUV,E-segment,5,,https://www.tesla.com/modely
+tesla-model-s-lr-palladium,Sedan,F-segment,5,,https://www.tesla.com/models
+tesla-model-s-performance-raven,Sedan,F-segment,5,,https://www.tesla.com/models
+tesla-model-s-plaid,Sedan,F-segment,5,,https://www.tesla.com/models
+tesla-model-x-lr-raven,SUV,F-segment,7,,https://www.tesla.com/modelx
+tesla-model-x-lr-palladium,SUV,F-segment,7,,https://www.tesla.com/modelx
+hyundai-ioniq-5,SUV,D-segment,5,,https://www.hyundai.com/worldwide/en/eco/ioniq5
+hyundai-ioniq-6,Sedan,D-segment,5,,https://www.hyundai.com/worldwide/en/eco/ioniq6
+hyundai-kona-64kwh,SUV,B-segment,5,,https://www.hyundai.com/worldwide/en/eco/kona-electric
+kia-ev6,SUV,D-segment,5,,https://www.kia.com/worldwide/vehicles/ev6
+kia-ev6-gt,SUV,D-segment,5,,https://www.kia.com/worldwide/vehicles/ev6
+kia-ev9,SUV,E-segment,7,,https://www.kia.com/worldwide/vehicles/ev9
+ford-mustang-mach-e,SUV,D-segment,5,,https://www.ford.com/suvs/mach-e/
+bmw-i4-edrive40,Sedan,E-segment,5,,https://www.bmw.com/en/electric-cars/bmw-i4
+bmw-i4-m50,Sedan,E-segment,5,,https://www.bmw.com/en/electric-cars/bmw-i4
+bmw-ix-xdrive40,SUV,F-segment,5,,https://www.bmw.com/en/electric-cars/bmw-ix
+mercedes-eqs-450,Sedan,F-segment,5,,https://www.mercedes-benz.com/en/vehicles/model/eqs/
+audi-e-tron-55,SUV,F-segment,5,,https://www.audi.com/en/models/e-tron.html
+porsche-taycan,Sedan,F-segment,4,,https://www.porsche.com/international/models/taycan/
+jaguar-i-pace-90kwh,SUV,E-segment,5,,https://www.jaguar.com/electric-cars/i-pace/
+rivian-r1t,Pickup,,,, https://rivian.com/r1t
+rivian-r1s,SUV,,,, https://rivian.com/r1s

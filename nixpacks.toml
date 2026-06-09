@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "nodePackages.pnpm"]
+
+[phases.install]
+cmds = ["pnpm install --frozen-lockfile --ignore-scripts"]
+
+[phases.build]
+cmds = ["pnpm etl", "pnpm build"]
+
+[start]
+cmd = "sirv dist --single --host 0.0.0.0 --port $PORT"

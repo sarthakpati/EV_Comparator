@@ -1,0 +1,25 @@
+EV Comparator — Data Attribution
+
+TEST DATA
+---------
+All vehicle performance test data (range, charging, acceleration, noise, cargo, etc.)
+is sourced from Bjørn Nyland's independent EV test spreadsheet.
+
+  Source:   TB_test_results.xlsx (Bjørn Nyland's test results spreadsheet)
+  Credit:   Bjørn Nyland — https://bjornyland.com / https://www.youtube.com/@BjornNyland
+  License:  Reproduced with attribution. Contact Bjørn Nyland for commercial redistribution rights.
+
+Before any public deployment of this tool, confirm redistribution rights with the data author.
+
+MARKET OVERLAY DATA
+-------------------
+Price, launch date, and availability data in data/usa.md and similar files is
+community-maintained and provided for informational purposes only.
+
+  Accuracy:  Approximate starting MSRPs, pre-incentive, community-sourced.
+  Currency:  USD (usa.md), EUR (eu.md), GBP (uk.md), NOK (no.md)
+  Disclaimer: Not financial or purchasing advice. Verify with manufacturers.
+
+APPLICATION CODE
+----------------
+MIT License — see LICENSE file.

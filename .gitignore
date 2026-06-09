@@ -1,36 +1,29 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+# Dependencies
+node_modules/
+.pnp
 .pnp.js
 
-# testing
-/coverage
+# Build outputs
+dist/
+build/
 
-# next.js
-/.next/
-/out/
+# ETL outputs — commit these so data changes are visible in diffs
+# public/data/dataset.json   <- committed
+# public/data/coverage.json  <- committed
+# docs/canonicalization-report.md <- committed
 
-# production
-/build
+# Environment
+.env
+.env.local
+.env*.local
 
-# misc
+# Misc
 .DS_Store
 *.pem
-
-# debug
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env*.local
-.env
-
-# vercel
-.vercel
-
-# typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# Editor
+.vscode/settings.json
+.idea/

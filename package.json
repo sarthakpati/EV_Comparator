@@ -1,0 +1,49 @@
+{
+  "name": "ev-comparator",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Interactive EV comparison tool powered by Bjørn Nyland's real-world test data",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "etl": "tsx etl/index.ts",
+    "lint": "eslint src etl --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "@tanstack/react-virtual": "^3.13.9",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.18.1",
+    "nuqs": "^2.4.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.6.2",
+    "recharts": "^2.15.3",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^3.25.64",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.15.30",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.5.2",
+    "autoprefixer": "^10.4.21",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.3"
+  }
+}

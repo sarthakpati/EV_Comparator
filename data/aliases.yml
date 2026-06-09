@@ -1,0 +1,283 @@
+# Canonical vehicle ID overrides
+# Format: "raw string": { id, make, model, variant, batteryKwh }
+# Manual always wins. Add entries when ETL flags unresolved or wrong merges.
+
+"Model X Long Range Raven":
+  id: tesla-model-x-lr-raven
+  make: Tesla
+  model: Model X
+  variant: Long Range Raven
+
+"Tesla Model X LR Raven":
+  id: tesla-model-x-lr-raven
+  make: Tesla
+  model: Model X
+  variant: Long Range Raven
+
+"2019 Tesla Model 3 SR+":
+  id: tesla-model-3-sr-plus
+  make: Tesla
+  model: Model 3
+  variant: SR+
+
+"Tesla Model 3 LR Highland":
+  id: tesla-model-3-lr-highland
+  make: Tesla
+  model: Model 3
+  variant: LR Highland
+
+"Tesla Model 3 LR RWD Highland":
+  id: tesla-model-3-lr-highland
+  make: Tesla
+  model: Model 3
+  variant: LR Highland
+
+"Tesla Model 3 Performance Highland":
+  id: tesla-model-3-performance-highland
+  make: Tesla
+  model: Model 3
+  variant: Performance Highland
+
+"Tesla Model 3 Standard":
+  id: tesla-model-3-standard
+  make: Tesla
+  model: Model 3
+  variant: Standard
+
+"Tesla Model S LR Palladium":
+  id: tesla-model-s-lr-palladium
+  make: Tesla
+  model: Model S
+  variant: LR Palladium
+
+"Tesla Model S Performance Raven":
+  id: tesla-model-s-performance-raven
+  make: Tesla
+  model: Model S
+  variant: Performance Raven
+
+"Tesla Model Y LR Juniper":
+  id: tesla-model-y-lr-juniper
+  make: Tesla
+  model: Model Y
+  variant: LR Juniper
+
+"Tesla Model Y Performance Juniper":
+  id: tesla-model-y-performance-juniper
+  make: Tesla
+  model: Model Y
+  variant: Performance Juniper
+
+"Tesla Model X LR Palladium":
+  id: tesla-model-x-lr-palladium
+  make: Tesla
+  model: Model X
+  variant: LR Palladium
+
+"Hyundai Ioniq 28 kWh":
+  id: hyundai-ioniq-28kwh
+  make: Hyundai
+  model: Ioniq
+  variant: 28 kWh
+  batteryKwh: 28
+
+"Hyundai Ioniq 38 kWh":
+  id: hyundai-ioniq-38kwh
+  make: Hyundai
+  model: Ioniq
+  variant: 38 kWh
+  batteryKwh: 38
+
+"Audi e-tron 55":
+  id: audi-e-tron-55
+  make: Audi
+  model: e-tron
+  variant: "55"
+
+"Audi RS e-tron GT Performance":
+  id: audi-rs-e-tron-gt-performance
+  make: Audi
+  model: RS e-tron GT
+  variant: Performance
+
+"Audi RS e-Tron GT Performance":
+  id: audi-rs-e-tron-gt-performance
+  make: Audi
+  model: RS e-tron GT
+  variant: Performance
+
+"Kia e-Niro 64 kWh":
+  id: kia-e-niro-64kwh
+  make: Kia
+  model: e-Niro
+  batteryKwh: 64
+
+"Kia e-Soul 64 kWh":
+  id: kia-e-soul-64kwh
+  make: Kia
+  model: e-Soul
+  batteryKwh: 64
+
+"Nio ET5 100 kWh":
+  id: nio-et5-100kwh
+  make: Nio
+  model: ET5
+  batteryKwh: 100
+
+"Nio ET5 Touring 75 kWh":
+  id: nio-et5-touring-75kwh
+  make: Nio
+  model: ET5 Touring
+  batteryKwh: 75
+
+"VW e-Up 18.7 kWh":
+  id: vw-e-up-18kwh
+  make: VW
+  model: e-Up
+  batteryKwh: 18.7
+
+"VW e-Golf 35.8 kWh":
+  id: vw-e-golf-36kwh
+  make: VW
+  model: e-Golf
+  batteryKwh: 35.8
+
+"Nissan Leaf 40 kWh":
+  id: nissan-leaf-40kwh
+  make: Nissan
+  model: Leaf
+  batteryKwh: 40
+
+"Nissan Leaf 62 kWh":
+  id: nissan-leaf-62kwh
+  make: Nissan
+  model: Leaf
+  batteryKwh: 62
+
+"Tesla Model 3 Performance 2022":
+  id: tesla-model-3-performance-2022
+  make: Tesla
+  model: Model 3
+  variant: Performance 2022
+
+"Hyundai Ioniq 9 Long Range":
+  id: hyundai-ioniq-9-lr
+  make: Hyundai
+  model: Ioniq 9
+  variant: Long Range
+
+"Hyundai Ioniq 9 6-seater":
+  id: hyundai-ioniq-9-6seat
+  make: Hyundai
+  model: Ioniq 9
+  variant: 6-seater
+
+"BMW iX3 50 xDrive":
+  id: bmw-ix3-50-xdrive
+  make: BMW
+  model: iX3
+  variant: 50 xDrive
+
+"Mercedes CLA 350 4Matic":
+  id: mercedes-cla-350-4matic
+  make: Mercedes
+  model: CLA
+  variant: 350 4Matic
+
+"Nissan X-Trail e-Power e-4orce":
+  id: nissan-x-trail-epower-e4orce
+  make: Nissan
+  model: X-Trail
+  variant: e-Power e-4orce
+
+"Maxus eTerron 9":
+  id: maxus-eterron-9
+  make: Maxus
+  model: eTerron 9
+
+"Maxus Mifa 9":
+  id: maxus-mifa-9
+  make: Maxus
+  model: Mifa 9
+
+"Maxus Euniq 5":
+  id: maxus-euniq-5
+  make: Maxus
+  model: Euniq 5
+
+"Maxus eT90":
+  id: maxus-et90
+  make: Maxus
+  model: eT90
+
+"KGM Torres EVX":
+  id: kgm-torres-evx
+  make: KGM
+  model: Torres EVX
+
+"MGS6":
+  id: mg-s6
+  make: MG
+  model: S6
+
+"MG Cyberster":
+  id: mg-cyberster
+  make: MG
+  model: Cyberster
+
+"HiPhi X":
+  id: hiphi-x
+  make: HiPhi
+  model: X
+
+"Hongqi E-HS7 111 kWh":
+  id: hongqi-e-hs7-111kwh
+  make: Hongqi
+  model: E-HS7
+  batteryKwh: 111
+
+"Hongqi E-HS9 6 seater":
+  id: hongqi-e-hs9-6seat
+  make: Hongqi
+  model: E-HS9
+  variant: 6 seater
+
+# Market overlay disambiguation
+"Hyundai Kona Electric":
+  id: hyundai-kona-64kwh
+  make: Hyundai
+  model: Kona
+  batteryKwh: 64
+
+"Hyundai Ioniq Electric 28/38 kWh":
+  id: hyundai-ioniq-28kwh
+  make: Hyundai
+  model: Ioniq
+  variant: 28/38 kWh
+
+"VW ID.4":
+  id: vw-id4-pro-4motion
+  make: VW
+  model: ID4
+  variant: Pro
+
+"VW ID.7":
+  id: vw-id7-pro
+  make: VW
+  model: ID7
+  variant: Pro
+
+"Polestar Polestar 2":
+  id: polestar-2
+  make: Polestar
+  model: "2"
+
+"Polestar Polestar 3":
+  id: polestar-3
+  make: Polestar
+  model: "3"
+
+"Polestar Polestar 4":
+  id: polestar-4
+  make: Polestar
+  model: "4"

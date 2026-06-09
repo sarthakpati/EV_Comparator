@@ -1,0 +1,22 @@
+DATA LICENSE NOTICE
+===================
+
+The vehicle performance test data included in this repository (contained in the
+data/*.md files, derived from TB_test_results.xlsx) is the intellectual property
+of Bjørn Nyland.
+
+This data is reproduced here with attribution for open-source, non-commercial
+use. Before deploying this application publicly or using the data commercially,
+you must:
+
+1. Confirm acceptable use directly with Bjørn Nyland.
+2. Credit the source prominently in all user-facing interfaces.
+3. Keep data provenance in MetricValue.source for all values.
+
+Credit:
+  Bjørn Nyland
+  https://www.youtube.com/@BjornNyland
+  https://bjornyland.com
+
+The application code (src/, etl/) is separately licensed under MIT (see LICENSE).
+Market overlay data (data/usa.md etc.) is community-contributed and approximate.
