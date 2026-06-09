@@ -1,3 +1,6 @@
+import { AdUnit } from '../components/ads/AdUnit'
+import { AD_SLOTS } from '../lib/ads'
+
 export function About() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12 prose prose-slate dark:prose-invert">
@@ -62,6 +65,13 @@ export function About() {
           </div>
         </div>
       </section>
+
+      {AD_SLOTS.aboutInline && (
+        <div className="my-10">
+          <p className="text-[10px] uppercase tracking-wider text-slate-400 text-center mb-1">Advertisement</p>
+          <AdUnit slot={AD_SLOTS.aboutInline} />
+        </div>
+      )}
 
       <section className="mb-10">
         <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Data Conditions</h2>
