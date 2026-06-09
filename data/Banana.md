@@ -168,8 +168,8 @@
 | Mini Cooper SE                 | 3       | 13             |
 | 2021 Fiat 500e                 | 2       | 8              |
 | Fiat 500e                      | 1       | 8              |
-| Ligier Myli                    | 8       | nan            |
-| MG Cyberster                   | 3       | nan            |
+| Ligier Myli                    | 8       |                |
+| MG Cyberster                   | 3       |                |
 | Van                            | Trunk   | Seats folded   |
 | VW e-Crafter cargo             | 156     | 156            |
 | Kia PV5 Passenger              | 33      | 58             |
@@ -178,7 +178,7 @@
 | Nissan Townstar                | 43      | 43             |
 | ID Buzz 5 seater               | 30      | 49             |
 | Mercedes EQV 7 seater          | 13      | 35             |
-| Kia EV9 van                    | nan     | 34             |
+| Kia EV9 van                    |         | 34             |
 | Denza D9                       | 12      | 30             |
 | Citroen e-Spacetourer 7 seater | 10      | 24             |
 | Kia e-Soul van                 | 21      | 21             |

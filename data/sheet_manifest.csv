@@ -1,16 +1,16 @@
 sheet_name,rows,columns,markdown_file
-Banana,182,3,output/Banana.md
-Weight,254,7,output/Weight.md
-Acceleration,205,22,output/Acceleration.md
-Noise,249,10,output/Noise.md
-Braking,65,11,output/Braking.md
-Range,656,15,output/Range.md
-Sunday,71,11,output/Sunday.md
-1000 km,229,8,output/1000_km.md
-Zeva,33,19,output/Zeva.md
-Geilo,8,8,output/Geilo.md
-Degradation,62,11,output/Degradation.md
-Zero mile,32,10,output/Zero_mile.md
-500 km,16,9,output/500_km.md
-Arctic Circle,18,8,output/Arctic_Circle.md
-Bangkok,12,5,output/Bangkok.md
+Banana,182,3,Banana.md
+Weight,254,6,Weight.md
+Acceleration,205,22,Acceleration.md
+Noise,249,10,Noise.md
+Braking,65,11,Braking.md
+Range,656,15,Range.md
+Sunday,71,11,Sunday.md
+1000 km,229,8,1000_km.md
+Zeva,33,19,Zeva.md
+Geilo,8,8,Geilo.md
+Degradation,62,11,Degradation.md
+Zero mile,32,10,Zero_mile.md
+500 km,16,9,500_km.md
+Arctic Circle,18,8,Arctic_Circle.md
+Bangkok,12,5,Bangkok.md

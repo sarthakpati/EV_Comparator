@@ -220,7 +220,7 @@
 | MG5                                      | Wet       | Nokian R5                               | Winter   | 215/50-17    | 215/50-17   | 65.2      | 67.9       | 69.6       | 67.92330268 |
 | VW e-Golf                                | Dry       | Hankook                                 | Winter   | 205/55-16    | 205/55-16   | 65        | 68         | 70         | 68.12285985 |
 | MG ZS EV 44.5 kWh                        | Wet       | Continental VC7                         | Winter   | 215/50-17    | 215/50-17   | 65.4      | 67.8       | 70         | 68.12756634 |
-| VW e-Crafter                             | Wet       | Nokian CR3                              | Winter   | 205/75-16    | 205/75-16   | 65.6      | nan        | nan        | 60.82878985 |
+| VW e-Crafter                             | Wet       | Nokian CR3                              | Winter   | 205/75-16    | 205/75-16   | 65.6      |            |            | 60.82878985 |
 | 2024 Mini Cooper SE                      | Dry       | Continental VC7                         | Winter   | 195/60-16    | 195/60-16   | 64.9      | 67.8       | 70         | 68.04       |
 | Volvo XC40                               | Rain      | Continental VC7                         | Winter   | 235/50-19    | 255/45-19   | 65.3      | 68.1       | 69.9       | 68.1551922  |
 | VW ID4 1st Max                           | Dry       | Nokian R3                               | Winter   | 235/50-20    | 255/45-20   | 66.6      | 68         | 69.5       | 68.19389596 |
@@ -248,4 +248,4 @@
 | Fiat 500e                                | Wet       | Nereus NS805+                           | Winter   | 195/55-15    | 195/55-15   | 66.9      | 70.4       | 73.1       | 70.8254542  |
 | Kia e-Soul 64 kWh van                    | Dry       | Nokian R3                               | Winter   | 215/55-17    | 215/55-17   | 68.9      | 71.1       | 73.6       | 71.61903234 |
 | Nissan e-NV200 40 kWh                    | Wet       | Continental VC6                         | Winter   | 185/65-15    | 185/65-15   | 68.9      | 71.7       | 74         | 72.01145938 |
-| * = Aftermarket soundproofing            | nan       | nan                                     | nan      | nan          | nan         | nan       | nan        | nan        | nan         |
+| * = Aftermarket soundproofing            |           |                                         |          |              |             |           |            |            |             |
