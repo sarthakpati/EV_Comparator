@@ -83971,12 +83971,12 @@
     },
     {
       "id": "price_usd",
-      "label": "Starting Price (USD)",
+      "label": "Starting Price",
       "group": "cost",
       "unit": "USD",
       "direction": "lower-better",
       "precision": 0,
-      "description": "Approximate starting MSRP in USD (pre-incentive), US market."
+      "description": "Approximate starting MSRP (pre-incentive). Shown in the selected market's currency, or as a USD range across markets in the \"All markets\" view."
     },
     {
       "id": "launch_year",
@@ -84016,6 +84016,6 @@
       "flag": "🇩🇪"
     }
   ],
-  "generatedAt": "2026-06-09T15:59:13.345Z",
+  "generatedAt": "2026-06-09T16:21:40.406Z",
   "sourceAttribution": "Test data: Bjørn Nyland (bjornyland.com) — reproduced with attribution. Market overlays: community-maintained, approximate prices pre-incentive."
 }

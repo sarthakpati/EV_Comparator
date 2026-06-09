@@ -9,7 +9,7 @@ import { About } from './app/About'
 import { Spinner } from './components/ui/Spinner'
 import { useAppStore } from './store'
 import { loadDataset } from './lib/data'
-import { getUnitSystem } from './lib/markets'
+import { getUnitSystem, ALL_MARKET } from './lib/markets'
 import type { Condition } from './lib/types'
 import type { UnitSystem } from './lib/units'
 
@@ -24,7 +24,7 @@ function AppContent() {
       || document.documentElement.classList.contains('dark')
   })
 
-  const [market, setMarket] = useState('US')
+  const [market, setMarket] = useState(ALL_MARKET)
   const [viewMode, setViewMode] = useState<ViewMode>('simple')
 
   const unitSystem: UnitSystem = getUnitSystem(market)
@@ -38,7 +38,6 @@ function AppContent() {
     search: '',
     makes: [],
     drivetrains: [],
-    availableInMarket: false,
   })
 
   useEffect(() => {
@@ -87,7 +86,9 @@ function AppContent() {
     }
     if (filters.makes.length > 0 && !filters.makes.includes(v.make)) return false
     if (filters.drivetrains.length > 0 && (!v.drivetrain || !filters.drivetrains.includes(v.drivetrain))) return false
-    if (filters.availableInMarket) {
+    // Selecting a specific market filters to vehicles available (or upcoming) there.
+    // "All markets" shows every EV regardless of availability.
+    if (market !== ALL_MARKET) {
       const mkt = v.markets?.[market as 'US' | 'UK' | 'DE']
       if (!mkt || (mkt.available !== 'available' && mkt.available !== 'upcoming')) return false
     }
@@ -118,6 +119,7 @@ function AppContent() {
               condition={condition}
               isDark={isDark}
               unitSystem={unitSystem}
+              market={market}
             />
           </main>
         } />
@@ -128,7 +130,6 @@ function AppContent() {
               metrics={metrics}
               filters={filters}
               onChange={setFilters}
-              market={market}
               viewMode={viewMode}
             />
             <ScatterView
@@ -137,6 +138,7 @@ function AppContent() {
               condition={condition}
               isDark={isDark}
               unitSystem={unitSystem}
+              market={market}
             />
           </main>
         } />
@@ -147,7 +149,6 @@ function AppContent() {
               metrics={metrics}
               filters={filters}
               onChange={setFilters}
-              market={market}
               viewMode={viewMode}
             />
             <MatrixView

@@ -5,6 +5,7 @@ import {
 } from 'recharts'
 import type { Vehicle, MetricDef, Condition } from '../../lib/types'
 import { getDisplayValue } from '../../lib/metricHelpers'
+import { getVehiclePrice } from '../../lib/markets'
 import { formatValue, formatTime, type UnitSystem } from '../../lib/units'
 import { useAppStore } from '../../store'
 import { Button } from '../../components/ui/Button'
@@ -22,10 +23,16 @@ interface CompareViewProps {
   condition: Partial<Condition>
   isDark: boolean
   unitSystem?: UnitSystem
+  market: string
 }
 
-export function CompareView({ vehicles, metrics, condition, isDark, unitSystem = 'metric' }: CompareViewProps) {
+export function CompareView({ vehicles, metrics, condition, isDark, unitSystem = 'metric', market }: CompareViewProps) {
   const { compareSet, toggleCompare, clearCompare } = useAppStore()
+
+  const metricValue = (v: Vehicle, metricId: string): number | null =>
+    metricId === 'price_usd'
+      ? getVehiclePrice(v.markets, market).sortValue
+      : getDisplayValue(v, metricId, condition)
 
   const compareVehicles = useMemo(
     () => vehicles.filter(v => compareSet.has(v.id)),
@@ -138,7 +145,7 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
               </thead>
               <tbody>
                 {metrics.map(metric => {
-                  const values = compareVehicles.map(v => getDisplayValue(v, metric.id, condition))
+                  const values = compareVehicles.map(v => metricValue(v, metric.id))
                   if (values.every(v => v === null)) return null
                   const nonNull = values.filter((v): v is number => v !== null)
                   const best = nonNull.length > 0
@@ -155,9 +162,11 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
                       {values.map((val, i) => {
                         const isBest = val !== null && val === best
                         const display = val === null ? '—'
-                          : metric.unit === 'min' && metric.id.includes('roadtrip')
-                            ? formatTime(val)
-                            : formatValue(val, metric.unit, metric.precision, unitSystem)
+                          : metric.id === 'price_usd'
+                            ? getVehiclePrice(compareVehicles[i].markets, market).label
+                            : metric.unit === 'min' && metric.id.includes('roadtrip')
+                              ? formatTime(val)
+                              : formatValue(val, metric.unit, metric.precision, unitSystem)
 
                         return (
                           <td

@@ -1,6 +1,6 @@
 # Canonicalization Report
 
-Generated: 2026-06-09T15:59:13.381Z
+Generated: 2026-06-09T16:21:40.443Z
 Vehicles: 542
 
 ## Vehicles

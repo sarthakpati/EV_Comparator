@@ -6,7 +6,6 @@ export interface FilterState {
   search: string
   makes: string[]
   drivetrains: ('RWD' | 'AWD' | 'FWD')[]
-  availableInMarket: boolean
 }
 
 interface FilterBarProps {
@@ -14,11 +13,10 @@ interface FilterBarProps {
   metrics: MetricDef[]
   filters: FilterState
   onChange: (f: FilterState) => void
-  market: string
   viewMode?: 'simple' | 'advanced'
 }
 
-export function FilterBar({ vehicles, filters, onChange, market, viewMode = 'advanced' }: FilterBarProps) {
+export function FilterBar({ vehicles, filters, onChange, viewMode = 'advanced' }: FilterBarProps) {
   const [showAdvanced, setShowAdvanced] = useState(false)
   const isSimple = viewMode === 'simple'
 
@@ -29,7 +27,6 @@ export function FilterBar({ vehicles, filters, onChange, market, viewMode = 'adv
   const activeCount = [
     filters.makes.length > 0,
     filters.drivetrains.length > 0,
-    filters.availableInMarket,
   ].filter(Boolean).length
 
   return (
@@ -48,17 +45,6 @@ export function FilterBar({ vehicles, filters, onChange, market, viewMode = 'adv
             className="w-full pl-8 pr-3 py-1.5 text-sm border border-slate-200 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
-
-        {/* Quick filter: available in market */}
-        <label className="flex items-center gap-1.5 text-sm cursor-pointer text-slate-600 dark:text-slate-400">
-          <input
-            type="checkbox"
-            checked={filters.availableInMarket}
-            onChange={e => update({ availableInMarket: e.target.checked })}
-            className="rounded border-slate-300 text-blue-600 focus:ring-blue-500"
-          />
-          Available in {market}
-        </label>
 
         {/* Advanced filters toggle — hidden in simple mode */}
         {!isSimple && (
@@ -84,7 +70,7 @@ export function FilterBar({ vehicles, filters, onChange, market, viewMode = 'adv
           <Button
             size="xs"
             variant="ghost"
-            onClick={() => onChange({ search: filters.search, makes: [], drivetrains: [], availableInMarket: false })}
+            onClick={() => onChange({ search: filters.search, makes: [], drivetrains: [] })}
           >
             Clear filters
           </Button>

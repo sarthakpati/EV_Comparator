@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { clsx } from 'clsx'
 import { useAppStore } from '../store'
-import { MARKET_CONFIGS } from '../lib/markets'
+import { MARKET_CONFIGS, ALL_MARKET } from '../lib/markets'
 
 type ViewMode = 'simple' | 'advanced'
 
@@ -86,7 +86,9 @@ export function Header({ isDark, onToggleDark, market, onMarketChange, viewMode,
           onChange={e => onMarketChange(e.target.value)}
           className="text-xs border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           aria-label="Select market"
+          title="Selecting a market filters to vehicles available there and localizes units & pricing"
         >
+          <option value={ALL_MARKET}>🌐 All markets</option>
           {MARKET_CONFIGS.map(m => (
             <option key={m.code} value={m.code}>{m.flag} {m.name}</option>
           ))}

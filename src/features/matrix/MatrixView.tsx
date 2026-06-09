@@ -16,6 +16,7 @@ import { SortRail } from './SortRail'
 import { ColumnPicker } from './ColumnPicker'
 import { computePercentiles } from '../../lib/colors'
 import { getDisplayValue } from '../../lib/metricHelpers'
+import { getVehiclePrice, getPriceHeaderLabel, type PriceInfo } from '../../lib/markets'
 import { Button } from '../../components/ui/Button'
 import { Tooltip } from '../../components/ui/Tooltip'
 import { useAppStore } from '../../store'
@@ -30,6 +31,9 @@ const SIMPLE_METRICS = [
   'range_90_summer', 'accel_0_100', 'roadtrip_1000km_time',
   'consumption_90_summer', 'cargo_trunk', 'price_usd',
 ]
+
+const VEHICLE_COL_W = 220
+const ROW_H = 48
 
 interface MatrixViewProps {
   vehicles: Vehicle[]
@@ -66,13 +70,22 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
     return vs
   }, [vehicles, searchQuery])
 
+  // Market-aware price (local currency for a specific market, USD range for "All").
+  const priceInfo = useMemo(() => {
+    const map: Record<string, PriceInfo> = {}
+    for (const v of filteredVehicles) map[v.id] = getVehiclePrice(v.markets, marketCode)
+    return map
+  }, [filteredVehicles, marketCode])
+
   const data = useMemo((): MatrixRowData[] => filteredVehicles.map(v => {
     const row: MatrixRowData = { vehicle: v }
     for (const m of visibleMetrics) {
-      row[m.id] = getDisplayValue(v, m.id, condition)
+      row[m.id] = m.id === 'price_usd'
+        ? (priceInfo[v.id]?.sortValue ?? null)
+        : getDisplayValue(v, m.id, condition)
     }
     return row
-  }), [filteredVehicles, visibleMetrics, condition])
+  }), [filteredVehicles, visibleMetrics, condition, priceInfo])
 
   const percentileMap = useMemo(() => {
     const map: Record<string, Record<string, number | null>> = {}
@@ -109,7 +122,7 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
         const v = row.original.vehicle as Vehicle
         const inCompare = compareSet.has(v.id)
         return (
-          <td className="sticky left-0 z-10 bg-white dark:bg-slate-900 px-3 py-2 border-r border-slate-100 dark:border-slate-800 min-w-[200px] max-w-[240px]">
+          <td className="sticky left-0 z-10 bg-white dark:bg-slate-900 px-3 py-2 border-r border-slate-100 dark:border-slate-800">
             <div className="flex items-center gap-2">
               <button
                 onClick={() => toggleCompare(v.id)}
@@ -141,7 +154,7 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
           </td>
         )
       },
-      size: 220,
+      size: VEHICLE_COL_W,
       enableSorting: true,
     },
     ...visibleMetrics.map((metric): ColumnDef<typeof data[0]> => ({
@@ -154,6 +167,7 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
         const vehicleId = (row.original.vehicle as Vehicle).id
         const percentile = percentileMap[metric.id]?.[vehicleId] ?? null
         const isBest = bestMap[metric.id] === vehicleId && value !== null
+        const displayOverride = metric.id === 'price_usd' ? priceInfo[vehicleId]?.label : undefined
         return (
           <HeatCell
             value={value}
@@ -162,12 +176,13 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
             isDark={isDark}
             isBest={isBest}
             unitSystem={unitSystem}
+            displayOverride={displayOverride}
           />
         )
       },
       size: 130,
     })),
-  ], [visibleMetrics, percentileMap, bestMap, isDark, compareSet, toggleCompare, unitSystem])
+  ], [visibleMetrics, percentileMap, bestMap, isDark, compareSet, toggleCompare, unitSystem, priceInfo])
 
   const table = useReactTable({
     data,
@@ -184,9 +199,15 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
   const rowVirtualizer = useVirtualizer({
     count: rows.length,
     getScrollElement: () => tableRef.current,
-    estimateSize: () => 40,
-    overscan: 15,
+    estimateSize: () => ROW_H,
+    overscan: 12,
   })
+
+  const virtualItems = rowVirtualizer.getVirtualItems()
+  const totalSize = rowVirtualizer.getTotalSize()
+  const paddingTop = virtualItems.length > 0 ? virtualItems[0].start : 0
+  const paddingBottom = virtualItems.length > 0 ? totalSize - virtualItems[virtualItems.length - 1].end : 0
+  const colCount = visibleMetrics.length + 1
 
   const removeSortLevel = useCallback((id: string) => {
     setSorting(prev => prev.filter(s => s.id !== id))
@@ -236,7 +257,14 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
 
       {/* Table */}
       <div ref={tableRef} className="flex-1 overflow-auto scrollbar-thin">
-        <table className="w-full border-collapse text-sm" style={{ tableLayout: 'fixed' }}>
+        <table
+          className="w-full border-collapse text-sm"
+          style={{ tableLayout: 'fixed', minWidth: `${VEHICLE_COL_W + visibleMetrics.length * 130}px` }}
+        >
+          <colgroup>
+            <col style={{ width: VEHICLE_COL_W }} />
+            {visibleMetrics.map(m => <col key={m.id} />)}
+          </colgroup>
           <thead className="sticky top-0 z-20 bg-white dark:bg-slate-900">
             {table.getHeaderGroups().map(headerGroup => (
               <tr key={headerGroup.id} className="border-b border-slate-200 dark:border-slate-700">
@@ -244,6 +272,11 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
                   const metric = metrics.find(m => m.id === header.id)
                   const sortDir = header.column.getIsSorted()
                   const sortIdx = sorting.findIndex(s => s.id === header.id)
+                  const headerLabel = header.id === 'vehicle'
+                    ? 'Vehicle'
+                    : header.id === 'price_usd'
+                      ? getPriceHeaderLabel(marketCode)
+                      : (metric?.label ?? header.id)
 
                   return (
                     <th
@@ -254,20 +287,19 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
                         transition-colors
                         ${header.id === 'vehicle' ? 'sticky left-0 z-20 bg-white dark:bg-slate-900 border-r border-slate-100 dark:border-slate-800' : ''}
                       `}
-                      style={{ width: header.getSize() }}
                       onClick={header.column.getToggleSortingHandler()}
                       aria-sort={sortDir === 'asc' ? 'ascending' : sortDir === 'desc' ? 'descending' : 'none'}
                     >
                       <Tooltip content={metric?.description ?? header.id} side="bottom">
-                        <span className="flex items-center gap-1">
-                          {header.id === 'vehicle' ? 'Vehicle' : metric?.label ?? header.id}
+                        <span className="flex items-center gap-1 truncate">
+                          <span className="truncate">{headerLabel}</span>
                           {sortDir && (
-                            <span className="text-blue-500">
+                            <span className="text-blue-500 shrink-0">
                               {sortDir === 'asc' ? '↑' : '↓'}
                             </span>
                           )}
                           {sortIdx > -1 && (
-                            <span className="w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] flex items-center justify-center font-bold">
+                            <span className="w-4 h-4 rounded-full bg-blue-500 text-white text-[9px] flex items-center justify-center font-bold shrink-0">
                               {sortIdx + 1}
                             </span>
                           )}
@@ -279,36 +311,33 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
               </tr>
             ))}
           </thead>
-          <tbody style={{ height: `${rowVirtualizer.getTotalSize()}px`, position: 'relative' }}>
-            {rowVirtualizer.getVirtualItems().map(virtualRow => {
+          <tbody>
+            {paddingTop > 0 && (
+              <tr aria-hidden="true">
+                <td colSpan={colCount} style={{ height: paddingTop, padding: 0, border: 'none' }} />
+              </tr>
+            )}
+            {virtualItems.map(virtualRow => {
               const row = rows[virtualRow.index]
               return (
                 <tr
                   key={row.id}
-                  ref={rowVirtualizer.measureElement}
-                  data-index={virtualRow.index}
                   className="border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors"
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    transform: `translateY(${virtualRow.start}px)`,
-                  }}
+                  style={{ height: ROW_H }}
                 >
-                  {row.getVisibleCells().map(cell => {
-                    if (cell.column.id === 'vehicle') {
-                      return cell.column.columnDef.cell
-                        ? (cell.column.columnDef.cell as Function)({ row: cell.row, getValue: cell.getValue.bind(cell) })
-                        : null
-                    }
-                    return cell.column.columnDef.cell
+                  {row.getVisibleCells().map(cell => (
+                    cell.column.columnDef.cell
                       ? (cell.column.columnDef.cell as Function)({ row: cell.row, getValue: cell.getValue.bind(cell) })
                       : null
-                  })}
+                  ))}
                 </tr>
               )
             })}
+            {paddingBottom > 0 && (
+              <tr aria-hidden="true">
+                <td colSpan={colCount} style={{ height: paddingBottom, padding: 0, border: 'none' }} />
+              </tr>
+            )}
           </tbody>
         </table>
       </div>

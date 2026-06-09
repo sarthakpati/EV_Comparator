@@ -147,9 +147,9 @@ export const METRIC_DEFS: MetricDef[] = [
 
   // Market
   {
-    id: 'price_usd', label: 'Starting Price (USD)', group: 'cost',
+    id: 'price_usd', label: 'Starting Price', group: 'cost',
     unit: 'USD', direction: 'lower-better', precision: 0,
-    description: 'Approximate starting MSRP in USD (pre-incentive), US market.',
+    description: 'Approximate starting MSRP (pre-incentive). Shown in the selected market\'s currency, or as a USD range across markets in the "All markets" view.',
   },
   {
     id: 'launch_year', label: 'US Launch Year', group: 'cost',

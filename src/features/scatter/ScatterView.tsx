@@ -5,6 +5,7 @@ import {
 } from 'recharts'
 import type { Vehicle, MetricDef, Condition } from '../../lib/types'
 import { getDisplayValue } from '../../lib/metricHelpers'
+import { getVehiclePrice } from '../../lib/markets'
 import { formatValue, type UnitSystem } from '../../lib/units'
 import { useAppStore } from '../../store'
 
@@ -14,6 +15,7 @@ interface ScatterViewProps {
   condition: Partial<Condition>
   isDark: boolean
   unitSystem?: UnitSystem
+  market: string
 }
 
 interface ScatterPoint {
@@ -65,7 +67,7 @@ const CustomDot = (props: Record<string, unknown>) => {
   )
 }
 
-export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem = 'metric' }: ScatterViewProps) {
+export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem = 'metric', market }: ScatterViewProps) {
   const defaultX = metrics.find(m => m.id === 'range_90_summer')?.id ?? metrics[0]?.id ?? ''
   const defaultY = metrics.find(m => m.id === 'consumption_90_summer')?.id ?? metrics[1]?.id ?? ''
 
@@ -75,16 +77,22 @@ export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem =
   const xMetric = metrics.find(m => m.id === xMetricId)
   const yMetric = metrics.find(m => m.id === yMetricId)
 
+  const metricValue = (v: Vehicle, metricId: string): number | null =>
+    metricId === 'price_usd'
+      ? getVehiclePrice(v.markets, market).sortValue
+      : getDisplayValue(v, metricId, condition)
+
   const points: ScatterPoint[] = useMemo(() => {
     if (!xMetric || !yMetric) return []
     const raw = vehicles.flatMap(v => {
-      const x = getDisplayValue(v, xMetricId, condition)
-      const y = getDisplayValue(v, yMetricId, condition)
+      const x = metricValue(v, xMetricId)
+      const y = metricValue(v, yMetricId)
       if (x === null || y === null) return []
       return [{ x, y, vehicle: v, isPareto: false }]
     })
     return computePareto(raw, xMetric, yMetric)
-  }, [vehicles, xMetricId, yMetricId, condition, xMetric, yMetric])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [vehicles, xMetricId, yMetricId, condition, xMetric, yMetric, market])
 
   const paretoPoints = points.filter(p => p.isPareto)
   const nonParetoPoints = points.filter(p => !p.isPareto)
@@ -93,6 +101,11 @@ export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem =
     const typedPayload = payload as Array<{ payload: ScatterPoint }> | undefined
     if (!active || !typedPayload?.length) return null
     const { vehicle, x, y, isPareto } = typedPayload[0].payload
+
+    const fmt = (metric: MetricDef, val: number) =>
+      metric.id === 'price_usd'
+        ? getVehiclePrice(vehicle.markets, market).label
+        : formatValue(val, metric.unit, metric.precision, unitSystem)
 
     return (
       <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl p-3 max-w-xs">
@@ -105,12 +118,12 @@ export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem =
         <div className="mt-2 space-y-1">
           {xMetric && (
             <p className="text-xs text-slate-600 dark:text-slate-400">
-              {xMetric.label}: {formatValue(x, xMetric.unit, xMetric.precision, unitSystem)}
+              {xMetric.label}: {fmt(xMetric, x)}
             </p>
           )}
           {yMetric && (
             <p className="text-xs text-slate-600 dark:text-slate-400">
-              {yMetric.label}: {formatValue(y, yMetric.unit, yMetric.precision, unitSystem)}
+              {yMetric.label}: {fmt(yMetric, y)}
             </p>
           )}
         </div>
