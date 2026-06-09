@@ -4,15 +4,28 @@ import {
   ResponsiveContainer, Legend,
 } from 'recharts'
 import type { Vehicle, MetricDef, Condition } from '../../lib/types'
-import { getDisplayValue } from '../../lib/metricHelpers'
-import { getVehiclePrice } from '../../lib/markets'
+import { getMetricNumber, getDerivedLabel, REAL_RANGE_ID, REAL_CONSUMPTION_ID } from '../../lib/derived'
 import { formatValue, formatTime, type UnitSystem } from '../../lib/units'
 import { useAppStore } from '../../store'
 import { Button } from '../../components/ui/Button'
 
 const RADAR_METRICS = [
-  'range_90_summer', 'accel_0_100', 'consumption_90_summer',
+  REAL_RANGE_ID, 'accel_0_100', REAL_CONSUMPTION_ID,
   'noise_avg', 'cargo_trunk', 'roadtrip_1000km_time',
+]
+
+// Curated order for the side-by-side table. Leads with the condition-aware Range,
+// Consumption and Value; the fixed per-condition range columns are folded into the
+// detail drawer's grid instead of repeated here.
+const COMPARE_ORDER = [
+  REAL_RANGE_ID, REAL_CONSUMPTION_ID,
+  'roadtrip_1000km_time', 'roadtrip_avg_speed', 'roadtrip_stops',
+  'range_75pct_km', 'charge_time_75pct', 'charge_speed_75pct',
+  'accel_0_100', 'accel_0_100_1ft', 'hp', 'weight_kg', 'braking_distance',
+  'noise_avg', 'noise_80', 'noise_100', 'noise_120',
+  'cargo_trunk', 'cargo_seats_folded',
+  'battery_capacity', 'degradation_pct',
+  'price_usd', 'price_per_range',
 ]
 
 const RADAR_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6']
@@ -30,9 +43,7 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
   const { compareSet, toggleCompare, clearCompare } = useAppStore()
 
   const metricValue = (v: Vehicle, metricId: string): number | null =>
-    metricId === 'price_usd'
-      ? getVehiclePrice(v.markets, market).sortValue
-      : getDisplayValue(v, metricId, condition)
+    getMetricNumber(v, metricId, condition, market, unitSystem)
 
   const compareVehicles = useMemo(
     () => vehicles.filter(v => compareSet.has(v.id)),
@@ -40,10 +51,15 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
   )
 
   const radarMetrics = metrics.filter(m => RADAR_METRICS.includes(m.id))
+  const metricById = useMemo(() => new Map(metrics.map(m => [m.id, m])), [metrics])
+  const orderedMetrics = useMemo(
+    () => COMPARE_ORDER.map(id => metricById.get(id)).filter((m): m is MetricDef => !!m),
+    [metricById],
+  )
 
   const radarData = useMemo(() => {
     return radarMetrics.map(metric => {
-      const vals = compareVehicles.map(v => getDisplayValue(v, metric.id, condition))
+      const vals = compareVehicles.map(v => getMetricNumber(v, metric.id, condition, market, unitSystem))
       const nonNull = vals.filter((v): v is number => v !== null)
       if (nonNull.length === 0) return { metric: metric.label, ...Object.fromEntries(compareVehicles.map(v => [v.id, 0])) }
       const min = Math.min(...nonNull), max = Math.max(...nonNull)
@@ -59,7 +75,7 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
       })
       return entry
     })
-  }, [compareVehicles, radarMetrics, condition])
+  }, [compareVehicles, radarMetrics, condition, market, unitSystem])
 
   if (compareSet.size === 0) {
     return (
@@ -144,7 +160,7 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
                 </tr>
               </thead>
               <tbody>
-                {metrics.map(metric => {
+                {orderedMetrics.map(metric => {
                   const values = compareVehicles.map(v => metricValue(v, metric.id))
                   if (values.every(v => v === null)) return null
                   const nonNull = values.filter((v): v is number => v !== null)
@@ -161,12 +177,12 @@ export function CompareView({ vehicles, metrics, condition, isDark, unitSystem =
                       </td>
                       {values.map((val, i) => {
                         const isBest = val !== null && val === best
+                        const override = getDerivedLabel(compareVehicles[i], metric.id, market, unitSystem)
                         const display = val === null ? '—'
-                          : metric.id === 'price_usd'
-                            ? getVehiclePrice(compareVehicles[i].markets, market).label
-                            : metric.unit === 'min' && metric.id.includes('roadtrip')
+                          : override
+                            ?? (metric.unit === 'min' && metric.id.includes('roadtrip')
                               ? formatTime(val)
-                              : formatValue(val, metric.unit, metric.precision, unitSystem)
+                              : formatValue(val, metric.unit, metric.precision, unitSystem))
 
                         return (
                           <td

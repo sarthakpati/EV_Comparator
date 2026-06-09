@@ -199,7 +199,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "hyundai-ioniq-28kwh",
@@ -763,7 +763,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "kia-e-niro-64kwh",
@@ -931,7 +931,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.3
     },
     {
       "id": "kia-soul-30kwh",
@@ -1100,7 +1100,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "nissan-leaf-40kwh",
@@ -1262,7 +1262,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.3
     },
     {
       "id": "vw-e-up-18kwh",
@@ -1382,7 +1382,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.23333333333333334
     },
     {
       "id": "vw-e-golf-36kwh",
@@ -1574,7 +1574,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "tesla-model-x-60d",
@@ -1714,7 +1714,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "jaguar-i-pace-90kwh",
@@ -2157,7 +2157,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.43333333333333335
     },
     {
       "id": "tesla-model-s-p100dl",
@@ -2370,7 +2370,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "opel-ampera-e",
@@ -2628,7 +2628,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "hyundai-kona-64kwh",
@@ -3085,7 +3085,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7666666666666667
     },
     {
       "id": "audi-e-tron-55",
@@ -3584,7 +3584,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "vw-e-crafter",
@@ -3694,7 +3694,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nissan-e-nv200-40kwh",
@@ -3854,7 +3854,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "mitsubishi-i-miev",
@@ -4028,7 +4028,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.43333333333333335
     },
     {
       "id": "tesla-model-3-performance",
@@ -5033,7 +5033,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.8
     },
     {
       "id": "kia-e-soul-64kwh",
@@ -5241,7 +5241,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.43333333333333335
     },
     {
       "id": "tesla-model-x-p90dl",
@@ -5402,7 +5402,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nissan-leaf-62kwh",
@@ -5823,7 +5823,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7666666666666667
     },
     {
       "id": "mercedes-eqc",
@@ -6257,7 +6257,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7666666666666667
     },
     {
       "id": "tesla-model-x-lr-raven",
@@ -6446,7 +6446,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "tesla-model-3-sr-plus",
@@ -6547,7 +6547,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "tesla-model-s-lr-raven",
@@ -7010,7 +7010,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "renault-zoe-52kwh",
@@ -7101,7 +7101,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.2
     },
     {
       "id": "audi-e-tron-50",
@@ -7231,7 +7231,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.36666666666666664
     },
     {
       "id": "hyundai-ioniq-38kwh",
@@ -7354,7 +7354,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3333333333333333
     },
     {
       "id": "vw-e-up-36.8kwh",
@@ -7522,7 +7522,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "mg-zs-ev-44.5kwh",
@@ -7919,7 +7919,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6666666666666666
     },
     {
       "id": "tesla-model-3-lr-rwd",
@@ -8081,7 +8081,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "porsche-taycan-4s-79kwh",
@@ -8292,7 +8292,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.43333333333333335
     },
     {
       "id": "peugeot-e-208-gt",
@@ -8492,7 +8492,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "ds-3-e-tense",
@@ -8745,7 +8745,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6
     },
     {
       "id": "honda-e",
@@ -9022,7 +9022,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "audi-e-tron-50-sportback",
@@ -9261,7 +9261,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "mini-cooper-se",
@@ -9736,7 +9736,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.7333333333333333
     },
     {
       "id": "xpeng-p7-performance",
@@ -9990,7 +9990,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6
     },
     {
       "id": "tesla-model-3-performance-w-mudflaps",
@@ -10151,7 +10151,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "porsche-taycan-4s-93kwh",
@@ -10375,7 +10375,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "polestar-2-lr-dm",
@@ -10785,7 +10785,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6666666666666666
     },
     {
       "id": "tesla-model-s-p85-7-seater",
@@ -10985,7 +10985,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "peugeot-e-2008-gt",
@@ -11185,7 +11185,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "maxus-e-deliver-3",
@@ -11353,7 +11353,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.4666666666666667
     },
     {
       "id": "vw-id3-1st-62kwh",
@@ -11539,7 +11539,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "vw-id3-1st-max-62kwh",
@@ -11701,7 +11701,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "vw-id3-1st-plus-62kwh",
@@ -11863,7 +11863,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "bmw-i3-42kwh",
@@ -12100,7 +12100,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "mazda-mx-30",
@@ -12353,7 +12353,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "xpeng-g3-520i",
@@ -12616,7 +12616,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-3-lr-2021",
@@ -13041,7 +13041,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "jaguar-i-pace-ev320",
@@ -13304,7 +13304,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "volvo-xc40-awd-78kwh",
@@ -13682,7 +13682,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-3-performance-2021",
@@ -13850,7 +13850,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "vw-id3-1st-plus",
@@ -14221,7 +14221,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "mercedes-eqv",
@@ -14501,7 +14501,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "ford-mustang-mach-e-lr-awd",
@@ -14764,7 +14764,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "polestar-2",
@@ -14958,7 +14958,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.4
     },
     {
       "id": "tesla-model-s-p85-mf",
@@ -15367,7 +15367,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "vw-id4-1st-82kwh",
@@ -15586,7 +15586,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "vw-id3-82kwh",
@@ -15849,7 +15849,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-3-sr",
@@ -16214,7 +16214,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "bmw-ix3",
@@ -16493,7 +16493,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "lexus-ux-300e",
@@ -16771,7 +16771,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "skoda-enyaq-iv-80",
@@ -17018,7 +17018,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6
     },
     {
       "id": "mercedes-eqa-250",
@@ -17579,7 +17579,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7666666666666667
     },
     {
       "id": "audi-e-tron-gt",
@@ -17892,7 +17892,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "vw-id4-gtx-82kwh",
@@ -18086,7 +18086,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "tesla-model-3-sr-mic",
@@ -18609,7 +18609,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "audi-q4-e-tron-40",
@@ -18848,7 +18848,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "tesla-model-3-lr-82kwh",
@@ -19111,7 +19111,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "hyundai-ioniq-5-awd",
@@ -19429,7 +19429,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "citroen-e-c4",
@@ -19706,7 +19706,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "opel-mokka-e",
@@ -19928,7 +19928,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "citroen-e-spacetourer",
@@ -20135,7 +20135,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.43333333333333335
     },
     {
       "id": "opel-corsa-e",
@@ -20359,7 +20359,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "fiat-500e",
@@ -20657,7 +20657,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6
     },
     {
       "id": "ford-mustang-mach-e-lr-rwd",
@@ -20922,7 +20922,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-y-lr",
@@ -21466,7 +21466,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.8
     },
     {
       "id": "tesla-model-y-lr-caps-on",
@@ -21627,7 +21627,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "tesla-model-y-lr-caps-off",
@@ -21788,7 +21788,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "vw-id3-55kwh",
@@ -22046,7 +22046,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "nio-es8-100kwh",
@@ -22290,7 +22290,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "maxus-euniq-5",
@@ -22543,7 +22543,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "kia-ev6-awd",
@@ -22775,7 +22775,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "polestar-2-sr-sm",
@@ -22962,7 +22962,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "polestar-2-performance",
@@ -23291,7 +23291,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "mercedes-eqs-580-4matic",
@@ -23705,7 +23705,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-3-sr-lfp-60kwh",
@@ -23995,7 +23995,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mercedes-eqa-350-4matic",
@@ -24258,7 +24258,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "bmw-i4-m50",
@@ -24788,7 +24788,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.8
     },
     {
       "id": "bmw-ix-xdrive50",
@@ -25100,7 +25100,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "mercedes-eqb-350-4matic",
@@ -25342,7 +25342,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "kia-ev6-rwd-77kwh",
@@ -25600,7 +25600,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "cupra-born-58",
@@ -25862,7 +25862,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "volvo-c40-awd",
@@ -26124,7 +26124,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "audi-e-tron-55-black-edition",
@@ -26311,7 +26311,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "volvo-xc40-fwd-69kwh",
@@ -26538,7 +26538,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "bmw-ix-xdrive40",
@@ -26811,7 +26811,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "porsche-taycan-cross-turismo-4",
@@ -27081,7 +27081,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "tesla-model-y-performance",
@@ -27674,7 +27674,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "vw-id5-gtx-82kwh",
@@ -27835,7 +27835,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mercedes-eqe-43-amg",
@@ -28156,7 +28156,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "bmw-i4-edrive40",
@@ -28479,7 +28479,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "skoda-enyaq-coup-rs",
@@ -28973,7 +28973,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.7333333333333333
     },
     {
       "id": "ford-mustang-mach-e-gt",
@@ -29248,7 +29248,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.5666666666666667
     },
     {
       "id": "byd-tang",
@@ -29508,7 +29508,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "mercedes-eqs-450",
@@ -29753,7 +29753,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "hongqi-e-hs9",
@@ -29998,7 +29998,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.5666666666666667
     },
     {
       "id": "mg-marvel-r-performance",
@@ -30261,7 +30261,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "xpeng-p7-performance-wing-edition",
@@ -30455,7 +30455,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "nissan-ariya-63kwh",
@@ -30647,7 +30647,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "nissan-ariya-fwd-87kwh",
@@ -30982,7 +30982,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "voyah-free",
@@ -31116,7 +31116,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "kia-niro-ev",
@@ -31390,7 +31390,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "mercedes-eqe-53-4matic",
@@ -31559,7 +31559,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "vw-id-buzz-82kwh",
@@ -31798,7 +31798,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "mercedes-eqe-300",
@@ -32043,7 +32043,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5666666666666667
     },
     {
       "id": "mercedes-eqv-300",
@@ -32203,7 +32203,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mg5",
@@ -32456,7 +32456,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "mercedes-eqs-53-4matic",
@@ -32702,7 +32702,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5666666666666667
     },
     {
       "id": "vw-id-buzz-cargo-82kwh",
@@ -32864,7 +32864,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "vw-id-buzz-cargo-w-trailer-82kwh",
@@ -32956,7 +32956,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.2
     },
     {
       "id": "renault-megane-e-tech-60kwh",
@@ -33144,7 +33144,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "mg-zs-ev-72kwh",
@@ -33329,7 +33329,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "vw-id-buzz-pro-82kwh",
@@ -33491,7 +33491,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "byd-atto-3-60kwh",
@@ -33753,7 +33753,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "ora-good-cat-500-ultra",
@@ -33844,7 +33844,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "ora-good-cat-gt",
@@ -33942,7 +33942,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "tesla-model-y-rwd",
@@ -34352,7 +34352,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "bmw-i7-xdrive60",
@@ -34764,7 +34764,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.7333333333333333
     },
     {
       "id": "mg4-51kwh",
@@ -34934,7 +34934,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "mercedes-eqs-500-4matic",
@@ -35135,7 +35135,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "tesla-model-s-plaid",
@@ -35756,7 +35756,7 @@
           }
         ]
       },
-      "coverage": 0.8571428571428571
+      "coverage": 0.8666666666666667
     },
     {
       "id": "tesla-model-s-lr-palladium",
@@ -36217,7 +36217,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.8
     },
     {
       "id": "toyota-bz4x-awd",
@@ -36644,7 +36644,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.8
     },
     {
       "id": "nio-et7-100kwh",
@@ -36850,7 +36850,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "tesla-model-s-plaid-caps-off",
@@ -37143,7 +37143,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "tesla-model-s-plaid-caps-on",
@@ -37436,7 +37436,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nissan-townstar",
@@ -37618,7 +37618,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "audi-q8-e-tron-55-sportback",
@@ -37862,7 +37862,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "mercedes-eqs-580-4matic-suv",
@@ -38132,7 +38132,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6666666666666666
     },
     {
       "id": "bmw-ix1-xdrive30",
@@ -38402,7 +38402,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6666666666666666
     },
     {
       "id": "hyundai-ioniq-6-rwd",
@@ -38723,7 +38723,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6666666666666666
     },
     {
       "id": "nio-el7-100kwh",
@@ -38959,7 +38959,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "nio-et5-100kwh",
@@ -39195,7 +39195,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "lucid-air-dream-edition-performance",
@@ -39342,7 +39342,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.23333333333333334
     },
     {
       "id": "nissan-ariya-e-4orce-87kwh",
@@ -39528,7 +39528,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "toyota-mirai-hydrogen",
@@ -39689,7 +39689,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "kia-ev6-gt",
@@ -40075,7 +40075,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "mg4-long-range",
@@ -40244,7 +40244,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "byd-han",
@@ -40442,7 +40442,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.43333333333333335
     },
     {
       "id": "hongqi-e-hs9-exclusive",
@@ -40610,7 +40610,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "lotus-eletre-s",
@@ -40804,7 +40804,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "vw-id3-pro-facelift-62kwh",
@@ -41162,7 +41162,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "mercedes-eqe-350-4matic-suv",
@@ -41373,7 +41373,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "maxus-et90",
@@ -41657,7 +41657,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.7333333333333333
     },
     {
       "id": "tesla-model-x-p90dl-op",
@@ -41748,7 +41748,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "tesla-model-3-performance-mc",
@@ -41858,7 +41858,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "polestar-2-lr-sm-refresh",
@@ -42092,7 +42092,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "mercedes-eqe-350-4matic",
@@ -42263,7 +42263,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "citroen-e-c4x",
@@ -42471,7 +42471,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.4666666666666667
     },
     {
       "id": "jeep-avenger",
@@ -42653,7 +42653,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "maxus-mifa-9",
@@ -42937,7 +42937,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.7333333333333333
     },
     {
       "id": "polestar-2-performance-2024",
@@ -43131,7 +43131,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "honda-e-ny1",
@@ -43408,7 +43408,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "xpeng-g9-performance",
@@ -43651,7 +43651,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "hyundai-kona-my2024-65kwh",
@@ -43820,7 +43820,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "nio-et5-touring-100kwh",
@@ -43982,7 +43982,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nio-el6-100kwh",
@@ -44332,7 +44332,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "volvo-xc40-awd-82kwh",
@@ -44518,7 +44518,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "mg4-xpower",
@@ -44913,7 +44913,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-3-lr-highland",
@@ -45696,7 +45696,7 @@
           }
         ]
       },
-      "coverage": 0.8214285714285714
+      "coverage": 0.8333333333333334
     },
     {
       "id": "bmw-i5-m60",
@@ -46017,7 +46017,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "hiphi-z",
@@ -46222,7 +46222,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "hiphi-x",
@@ -46356,7 +46356,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "audi-q4-e-tron-45-quattro",
@@ -46589,7 +46589,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "kia-ev9-gt-line",
@@ -46812,7 +46812,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "vw-id7-pro",
@@ -47225,7 +47225,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "opel-astra-e-tourer",
@@ -47503,7 +47503,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "smart-1-brabus",
@@ -47781,7 +47781,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "mercedes-eqe-43-amg-4matic-suv",
@@ -47950,7 +47950,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "mercedes-eqb-300-4matic",
@@ -48143,7 +48143,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "cupra-born-82kwh",
@@ -48311,7 +48311,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "smart-3-brabus",
@@ -48589,7 +48589,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "volvo-ex30-twin-performance",
@@ -48854,7 +48854,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "fisker-ocean-extreme",
@@ -49134,7 +49134,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "audi-q4-e-tron-sportback-45-quattro",
@@ -49303,7 +49303,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "nissan-ariya-e-4orce-evolve-87kwh",
@@ -49538,7 +49538,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "vw-id4-pro-4motion",
@@ -49830,7 +49830,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.5666666666666667
     },
     {
       "id": "volvo-ex30-rwd-er",
@@ -50025,7 +50025,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "lexus-rz-450e",
@@ -50354,7 +50354,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "byd-dolphin",
@@ -50614,7 +50614,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "byd-seal-u",
@@ -50867,7 +50867,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6
     },
     {
       "id": "byd-seal-performance",
@@ -51130,7 +51130,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-3-performance-highland",
@@ -51498,7 +51498,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "kgm-torres-evx",
@@ -51775,7 +51775,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "fiat-600e",
@@ -51957,7 +51957,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "audi-q6-e-tron-quattro",
@@ -52229,7 +52229,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "bmw-ix2-xdrive30",
@@ -52494,7 +52494,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "nio-es8-75kwh",
@@ -52585,7 +52585,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "tesla-model-3-rwd-highland",
@@ -52857,7 +52857,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "renault-scenic-e-tech-92kwh",
@@ -53081,7 +53081,7 @@
           }
         ]
       },
-      "coverage": 0.5357142857142857
+      "coverage": 0.5
     },
     {
       "id": "vw-id7-tourer-pro",
@@ -53273,7 +53273,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "tesla-model-s-85",
@@ -53442,7 +53442,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "xpeng-g6-performance",
@@ -53714,7 +53714,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "audi-rs-e-tron-gt",
@@ -53925,7 +53925,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mini-countryman-se-all4",
@@ -54252,7 +54252,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "mercedes-eqe-53-4matic-suv",
@@ -54486,7 +54486,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "nio-el8-100kwh",
@@ -54736,7 +54736,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "polestar-4-lr-dm",
@@ -54999,7 +54999,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "audi-sq6-e-tron",
@@ -55232,7 +55232,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "tesla-model-x-lr-palladium",
@@ -55499,7 +55499,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "tesla-model-y-lr-rwd",
@@ -55739,7 +55739,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "hyundai-ioniq-5-n",
@@ -56054,7 +56054,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "hyundai-ioniq-5-awd-84kwh",
@@ -56217,7 +56217,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "peugeot-e-5008",
@@ -56416,7 +56416,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.43333333333333335
     },
     {
       "id": "kia-ev6-awd-facelift",
@@ -56625,7 +56625,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.43333333333333335
     },
     {
       "id": "mg-cyberster",
@@ -56895,7 +56895,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6666666666666666
     },
     {
       "id": "mg-cyberster-heater-off",
@@ -57056,7 +57056,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mg-cyberster-roof-open-heat-off",
@@ -57217,7 +57217,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mg-cyberster-roof-open-heat-on",
@@ -57378,7 +57378,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "zeekr-001-awd",
@@ -57625,7 +57625,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "hyundai-ioniq-5-rwd-72.6kwh",
@@ -57788,7 +57788,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "deepal-s07",
@@ -57924,7 +57924,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "byd-sealion-7-performance-82.5kwh",
@@ -58038,7 +58038,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "gac-aion-es",
@@ -58167,7 +58167,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "ora-07-performance",
@@ -58282,7 +58282,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "denza-d9-performance",
@@ -58397,7 +58397,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "zeekr-x-awd",
@@ -58620,7 +58620,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.5
     },
     {
       "id": "audi-s6-e-tron-avant",
@@ -58874,7 +58874,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.6
     },
     {
       "id": "byd-tang-111kwh",
@@ -59113,7 +59113,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "byd-sealion-7-awd-93kwh",
@@ -59416,7 +59416,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "ford-explorer",
@@ -59693,7 +59693,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "tesla-model-y-lr-juniper",
@@ -59929,7 +59929,7 @@
           }
         ]
       },
-      "coverage": 0.5
+      "coverage": 0.5333333333333333
     },
     {
       "id": "ford-capri",
@@ -60128,7 +60128,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.43333333333333335
     },
     {
       "id": "ford-f-150-lightning",
@@ -60372,7 +60372,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4666666666666667
     },
     {
       "id": "hyundai-inster",
@@ -60627,7 +60627,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "vw-id7-gtx-tourer-91kwh",
@@ -60987,7 +60987,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "porsche-macan-4",
@@ -61305,7 +61305,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "seres-5-80kwh",
@@ -61466,7 +61466,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "audi-a6-avant-e-tron-quattro",
@@ -61707,7 +61707,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "kia-ev3-lr-fwd",
@@ -61878,7 +61878,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "vw-id3-pure-55kwh",
@@ -62065,7 +62065,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "citroen-e-c3",
@@ -62247,7 +62247,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "mgs5-64kwh",
@@ -62443,7 +62443,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "cupra-tavascan-vz-adrenaline",
@@ -62635,7 +62635,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "polestar-3-lr-dm",
@@ -62780,7 +62780,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.3333333333333333
     },
     {
       "id": "polestar-3-lr-performance",
@@ -62950,7 +62950,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "renault-5-e-tech-55kwh",
@@ -63114,7 +63114,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "zeekr-7x-performance-awd",
@@ -63283,7 +63283,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "firefly-select",
@@ -63520,7 +63520,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.5666666666666667
     },
     {
       "id": "vw-id-buzz-lwb-gtx",
@@ -63759,7 +63759,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "audi-q6-e-tron-sportback-quattro",
@@ -63928,7 +63928,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "audi-a6-e-tron-sportback-quattro",
@@ -64154,7 +64154,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "volvo-ex90-twin-ultra",
@@ -64417,7 +64417,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "jac-e30x-nordic-edition-50",
@@ -64686,7 +64686,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "kia-ev6-gt-facelift",
@@ -64847,7 +64847,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "hongqi-e-hs7-awd-111kwh",
@@ -65110,7 +65110,7 @@
           }
         ]
       },
-      "coverage": 0.6071428571428571
+      "coverage": 0.6333333333333333
     },
     {
       "id": "mercedes-cla-350-4matic",
@@ -65374,7 +65374,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "mg-im6-awd-100kwh",
@@ -65543,7 +65543,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "mercedes-g580",
@@ -65879,7 +65879,7 @@
           }
         ]
       },
-      "coverage": 0.7857142857142857
+      "coverage": 0.7333333333333333
     },
     {
       "id": "tesla-model-y-performance-juniper",
@@ -66145,7 +66145,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "smart-5-brabus",
@@ -66423,7 +66423,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.7
     },
     {
       "id": "skoda-enyaq-coup-85x-2025",
@@ -66591,7 +66591,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "mg-im5-awd-100kwh",
@@ -66760,7 +66760,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "maxus-eterron-9",
@@ -66966,7 +66966,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4666666666666667
     },
     {
       "id": "hyundai-ioniq-9-lr-awd",
@@ -67211,7 +67211,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "kgm-musso",
@@ -67418,7 +67418,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.43333333333333335
     },
     {
       "id": "mg-im6-rwd-75kwh",
@@ -67534,7 +67534,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "avatr-11-lr-rwd",
@@ -67648,7 +67648,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "leapmotor-b10",
@@ -67775,7 +67775,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "leapmotor-c10",
@@ -67904,7 +67904,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "tesla-model-y-lr-rwd-juniper",
@@ -68068,7 +68068,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mazda-6e-sr",
@@ -68490,7 +68490,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7666666666666667
     },
     {
       "id": "tesla-cybertruck-lr",
@@ -68723,7 +68723,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "firefly-comfort",
@@ -68883,7 +68883,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.26666666666666666
     },
     {
       "id": "deepal-s05-awd-69kwh",
@@ -69070,7 +69070,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.36666666666666664
     },
     {
       "id": "mgs6-awd",
@@ -69264,7 +69264,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.4
     },
     {
       "id": "kia-ev4-lr-fwd",
@@ -69433,7 +69433,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.3
     },
     {
       "id": "mercedes-evito",
@@ -69692,7 +69692,7 @@
           }
         ]
       },
-      "coverage": 0.6785714285714286
+      "coverage": 0.6333333333333333
     },
     {
       "id": "bmw-ix3-50-xdrive",
@@ -69971,7 +69971,7 @@
           }
         ]
       },
-      "coverage": 0.6428571428571429
+      "coverage": 0.6
     },
     {
       "id": "byd-atto-3-evo-awd",
@@ -70133,7 +70133,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "volvo-es90-rwd-92kwh",
@@ -70295,7 +70295,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "tesla-model-3-standard",
@@ -70591,7 +70591,7 @@
           }
         ]
       },
-      "coverage": 0.7142857142857143
+      "coverage": 0.6666666666666666
     },
     {
       "id": "kia-pv5-passenger",
@@ -70869,7 +70869,7 @@
           }
         ]
       },
-      "coverage": 0.75
+      "coverage": 0.7
     },
     {
       "id": "ford-puma-2025",
@@ -71102,7 +71102,7 @@
           }
         ]
       },
-      "coverage": 0.5714285714285714
+      "coverage": 0.5333333333333333
     },
     {
       "id": "nissan-x-trail-epower-e4orce",
@@ -71139,7 +71139,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "toyota-mirai",
@@ -71268,7 +71268,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.43333333333333335
     },
     {
       "id": "nio-et5-touring-75kwh",
@@ -71305,7 +71305,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "zeekr-7x-performance",
@@ -71415,7 +71415,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "audi-rs-e-tron-gt-performance",
@@ -71485,7 +71485,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "volvo-es90-rwd",
@@ -71608,7 +71608,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "audi-a6-e-tron-avant-quattro",
@@ -71646,7 +71646,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "vw-id7-gtx-tourer",
@@ -71761,7 +71761,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "kia-ev6-facelift-84kwh",
@@ -71799,7 +71799,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "polestar-2-lr-sm",
@@ -71846,7 +71846,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "hyundai-ioniq-5-84kwh",
@@ -71883,7 +71883,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "kia-ev4-lr",
@@ -71954,7 +71954,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "skoda-enyaq-coup-85x",
@@ -71991,7 +71991,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "vw-id5-gtx",
@@ -72112,7 +72112,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "byd-sealion-7-93kwh",
@@ -72167,7 +72167,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "kia-ev3-lr",
@@ -72238,7 +72238,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "mg4-64kwh",
@@ -72275,7 +72275,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "audi-q4-e-tron-45-quattro-sportback",
@@ -72313,7 +72313,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "mgs5",
@@ -72411,7 +72411,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.3333333333333333
     },
     {
       "id": "tesla-model-y-rwd-byd-battery",
@@ -72449,7 +72449,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "vw-id-buzz-lwb-gtx-91kwh",
@@ -72487,7 +72487,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "lexus-rz-550e-f-sport",
@@ -72597,7 +72597,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "byd-atto-3-evo",
@@ -72727,7 +72727,7 @@
           }
         ]
       },
-      "coverage": 0.4642857142857143
+      "coverage": 0.43333333333333335
     },
     {
       "id": "skoda-elroq-60",
@@ -72778,7 +72778,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "vw-id4-1st-gtx-82kwh",
@@ -72834,7 +72834,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "hongqi-e-hs9-120kwh",
@@ -72871,7 +72871,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "renault-5-55kwh",
@@ -72908,7 +72908,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "tesla-model-s-85d-2016",
@@ -72945,7 +72945,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "mercedes-eqc-400",
@@ -72990,7 +72990,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "hongqi-e-hs9-99kwh",
@@ -73029,7 +73029,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "hyundai-kona-my2024-64kwh",
@@ -73100,7 +73100,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "kia-niro-ev-64kwh",
@@ -73139,7 +73139,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "mini-cooper-se-54kwh",
@@ -73176,7 +73176,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "ford-puma",
@@ -73236,7 +73236,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "byd-tang-86.4kwh",
@@ -73275,7 +73275,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "byd-atto-3",
@@ -73391,7 +73391,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.3333333333333333
     },
     {
       "id": "hyundai-inster-lr",
@@ -73434,7 +73434,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "ford-f-150-lightning-sr",
@@ -73516,7 +73516,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "kgm-musso-ev",
@@ -73567,7 +73567,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "citroen-e-c3-aircross",
@@ -73604,7 +73604,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "eurabus-3-0-8-5-m",
@@ -73640,7 +73640,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "nissan-townstar-45kwh",
@@ -73677,7 +73677,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "renault-zoe-ze50",
@@ -73721,7 +73721,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "nissan-leaf-24kwh",
@@ -73778,7 +73778,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "old-results",
@@ -73831,7 +73831,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "tesla-model-3-sr-mic-2021",
@@ -73868,7 +73868,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "tesla-model-3-sr-fremont",
@@ -73906,7 +73906,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "tesla-model-3-sr-60kwh",
@@ -74123,7 +74123,7 @@
           }
         ]
       },
-      "coverage": 0.42857142857142855
+      "coverage": 0.4
     },
     {
       "id": "hyundai-ioniq-5",
@@ -74177,7 +74177,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "tesla-model-s-p85",
@@ -74214,7 +74214,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "peugeot-e-208",
@@ -74303,7 +74303,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "tesla-model-s-performance-raven",
@@ -74359,7 +74359,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "porsche-taycan-turbo-s",
@@ -74454,7 +74454,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "porsche-taycan-turbo",
@@ -74500,7 +74500,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-3-performance-2022",
@@ -74561,7 +74561,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "tesla-model-3-lr-2021-w-boost",
@@ -74607,7 +74607,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "zeekr-001",
@@ -74648,7 +74648,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-3-lr-2022-lg",
@@ -74686,7 +74686,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "mercedes-eqs-suv-maybach-680",
@@ -74804,7 +74804,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "polestar-2-pp-upgraded",
@@ -74851,7 +74851,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "byd-sealion-7",
@@ -74956,7 +74956,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.3333333333333333
     },
     {
       "id": "polestar-1",
@@ -75046,7 +75046,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "deepal-s05-69kwh",
@@ -75092,7 +75092,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "seres-5-2024-80kwh",
@@ -75130,7 +75130,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "mg-s6",
@@ -75230,7 +75230,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.3333333333333333
     },
     {
       "id": "kia-ev6-awd-77kwh",
@@ -75276,7 +75276,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "kia-ev6-awd-facelift-84kwh",
@@ -75323,7 +75323,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "volvo-ex30-rwd-extended-range",
@@ -75369,7 +75369,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "vw-id4-pro-4motion-82kwh",
@@ -75416,7 +75416,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "audi-q4-e-tron-45",
@@ -75454,7 +75454,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "hyundai-ioniq-9-lr",
@@ -75540,7 +75540,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "vw-id3-1st",
@@ -75640,7 +75640,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "renault-megane-e-tech",
@@ -75753,7 +75753,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "vw-id3-pure",
@@ -75840,7 +75840,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "mg-zs-ev",
@@ -75952,7 +75952,7 @@
           }
         ]
       },
-      "coverage": 0.35714285714285715
+      "coverage": 0.3333333333333333
     },
     {
       "id": "renault-5-e-tech",
@@ -76067,7 +76067,7 @@
           }
         ]
       },
-      "coverage": 0.39285714285714285
+      "coverage": 0.36666666666666664
     },
     {
       "id": "skoda-enyaq-iv80",
@@ -76113,7 +76113,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "polestar-2-sr-rwd",
@@ -76199,7 +76199,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nissan-ariya-87kwh",
@@ -76292,7 +76292,7 @@
           }
         ]
       },
-      "coverage": 0.32142857142857145
+      "coverage": 0.3
     },
     {
       "id": "peugeot-e-2008",
@@ -76357,7 +76357,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "kia-ceed-phev",
@@ -76408,7 +76408,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "audi-e-tron-55-full-spec",
@@ -76428,7 +76428,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "mercedes-evito-van",
@@ -76448,7 +76448,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "id-buzz-pro",
@@ -76467,7 +76467,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "nio-et7",
@@ -76548,7 +76548,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nio-el7",
@@ -76629,7 +76629,7 @@
           }
         ]
       },
-      "coverage": 0.2857142857142857
+      "coverage": 0.26666666666666666
     },
     {
       "id": "nio-el6",
@@ -76703,7 +76703,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "vw-id-buzz-cargo",
@@ -76723,7 +76723,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "peugeot-e5008",
@@ -76742,7 +76742,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "nissan-ariya-e-4orce-evolve",
@@ -76763,7 +76763,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-s-perf-raven",
@@ -76823,7 +76823,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "vw-id4-gtx",
@@ -76882,7 +76882,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "nio-et5-touring",
@@ -76917,7 +76917,7 @@
           }
         ]
       },
-      "coverage": 0.10714285714285714
+      "coverage": 0.1
     },
     {
       "id": "nio-et5",
@@ -76991,7 +76991,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "volvo-xc40-awd",
@@ -77011,7 +77011,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "vw-id4-max",
@@ -77031,7 +77031,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "vw-id4-1st",
@@ -77091,7 +77091,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "deepal-s05-awd",
@@ -77111,7 +77111,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "volvo-xc40-fwd",
@@ -77131,7 +77131,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "kia-ev6-rwd",
@@ -77203,7 +77203,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-y-rwd-byd",
@@ -77224,7 +77224,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-y-rwd-catl",
@@ -77245,7 +77245,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-3-performance-2019",
@@ -77282,7 +77282,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-3-lr-highland-2024",
@@ -77302,7 +77302,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "vw-id3-1st-max",
@@ -77362,7 +77362,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "vw-id3-pro-facelift",
@@ -77429,7 +77429,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "tesla-model-3-lr-rwd-highland",
@@ -77451,7 +77451,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "vw-id3",
@@ -77479,7 +77479,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "xpeng-g3-520-chinese",
@@ -77499,7 +77499,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "bmw-i3-22kwh",
@@ -77534,7 +77534,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "vw-e-up-highline-18.7kwh",
@@ -77555,7 +77555,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "nio-el8",
@@ -77607,7 +77607,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "audi-e-tron-55-w-acoustic-glass",
@@ -77660,7 +77660,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "renault-scenic-e-tech",
@@ -77728,7 +77728,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "tesla-model-s-plaid-w-anc",
@@ -77813,7 +77813,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "nio-es8",
@@ -77897,7 +77897,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "porsche-taycan-4s-w-glass",
@@ -77950,7 +77950,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "jaguar-i-pace",
@@ -78140,7 +78140,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "tesla-model-s-lr-palladium-w-anc",
@@ -78193,7 +78193,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "kia-ev3",
@@ -78285,7 +78285,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "firefly",
@@ -78337,7 +78337,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-x",
@@ -78421,7 +78421,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "vw-id-buzz",
@@ -78535,7 +78535,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "bmw-ix3-50-xdrive-anr-off",
@@ -78589,7 +78589,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "bmw-ix3-50-xdrive-anr-on",
@@ -78643,7 +78643,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-x-raven",
@@ -78696,7 +78696,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "xpeng-g3-520",
@@ -78748,7 +78748,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-3-lr-awd",
@@ -78850,7 +78850,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "kia-ev9",
@@ -78971,7 +78971,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "audi-e-tron",
@@ -79038,7 +79038,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "mercedes-eqs-580",
@@ -79090,7 +79090,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "vw-id7",
@@ -79157,7 +79157,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "audi-e-tron-black-edition",
@@ -79210,7 +79210,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "seres-5",
@@ -79288,7 +79288,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "deepal-s05",
@@ -79355,7 +79355,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "kia-ev4",
@@ -79440,7 +79440,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "vw-e-golf",
@@ -79539,7 +79539,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "bmw-i3-120-ah",
@@ -79592,7 +79592,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "kia-e-niro",
@@ -79659,7 +79659,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "hyundai-kona-2024",
@@ -79711,7 +79711,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "volvo-xc40",
@@ -79830,7 +79830,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "vw-id4-1st-max",
@@ -79883,7 +79883,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "hyundai-kona",
@@ -79950,7 +79950,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "hyundai-ioniq",
@@ -80002,7 +80002,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-3-lr",
@@ -80083,7 +80083,7 @@
           }
         ]
       },
-      "coverage": 0.21428571428571427
+      "coverage": 0.2
     },
     {
       "id": "vw-e-up",
@@ -80160,7 +80160,7 @@
           }
         ]
       },
-      "coverage": 0.25
+      "coverage": 0.23333333333333334
     },
     {
       "id": "tesla-model-3-sr-lfp",
@@ -80216,7 +80216,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "tesla-model-3-performance-w-double-glass",
@@ -80269,7 +80269,7 @@
           }
         ]
       },
-      "coverage": 0.14285714285714285
+      "coverage": 0.13333333333333333
     },
     {
       "id": "kia-e-soul-van-64kwh",
@@ -80330,7 +80330,7 @@
           }
         ]
       },
-      "coverage": 0.17857142857142858
+      "coverage": 0.16666666666666666
     },
     {
       "id": "aftermarket-soundproofing",
@@ -80368,7 +80368,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "hyundai-ioniq-9-6seat",
@@ -80396,7 +80396,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "nio-es8-6-seater",
@@ -80424,7 +80424,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "volvo-ex90",
@@ -80500,7 +80500,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "hongqi-e-hs7",
@@ -80527,7 +80527,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "hongqi-e-hs9-6seat",
@@ -80555,7 +80555,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "nio-el8-executive-6-seater",
@@ -80583,7 +80583,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-x-5-seater",
@@ -80611,7 +80611,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "zeekr-7x",
@@ -80638,7 +80638,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "audi-q6-e-tron",
@@ -80714,7 +80714,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "xpeng-g9",
@@ -80741,7 +80741,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "xpeng-g6",
@@ -80768,7 +80768,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqs-suv",
@@ -80833,7 +80833,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "vw-id7-tourer",
@@ -80861,7 +80861,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-y",
@@ -80888,7 +80888,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqb",
@@ -80915,7 +80915,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "vw-id4",
@@ -80942,7 +80942,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "bmw-ix",
@@ -80969,7 +80969,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-s-pre-facelift",
@@ -80997,7 +80997,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "audi-q4-e-tron",
@@ -81073,7 +81073,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqe-suv",
@@ -81149,7 +81149,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "vw-id5",
@@ -81176,7 +81176,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "audi-q4-e-tron-sportback",
@@ -81204,7 +81204,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "jaecoo-5",
@@ -81233,7 +81233,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqs",
@@ -81260,7 +81260,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "nissan-ariya",
@@ -81336,7 +81336,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mg-im6",
@@ -81363,7 +81363,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "polestar-4",
@@ -81439,7 +81439,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "jaecoo-6",
@@ -81466,7 +81466,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-x-6-seater",
@@ -81494,7 +81494,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "audi-q6-e-tron-sportback",
@@ -81522,7 +81522,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "ford-mustang-mach-e",
@@ -81601,7 +81601,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "bmw-ix1",
@@ -81628,7 +81628,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "cupra-tavascan",
@@ -81657,7 +81657,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "kia-ev6",
@@ -81687,7 +81687,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "toyota-bz4x",
@@ -81743,7 +81743,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "audi-e-tron-sportback",
@@ -81771,7 +81771,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "kia-e-soul",
@@ -81798,7 +81798,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "polestar-3",
@@ -81874,7 +81874,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqa",
@@ -81903,7 +81903,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "audi-a6-e-tron-sportback",
@@ -81931,7 +81931,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "hyundai-kona-my2024",
@@ -81959,7 +81959,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-s-facelift",
@@ -81987,7 +81987,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "porsche-macan",
@@ -82014,7 +82014,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "volvo-c40",
@@ -82093,7 +82093,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "volvo-es90",
@@ -82136,7 +82136,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "avatr-11",
@@ -82163,7 +82163,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "bmw-i7",
@@ -82190,7 +82190,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "xpeng-g3",
@@ -82217,7 +82217,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "nissan-leaf-2018",
@@ -82244,7 +82244,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mazda-6e",
@@ -82271,7 +82271,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "kia-soul-ev",
@@ -82326,7 +82326,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqe",
@@ -82353,7 +82353,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "hyundai-ioniq-6",
@@ -82383,7 +82383,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "porsche-taycan-cross-turismo",
@@ -82411,7 +82411,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "bmw-ix2",
@@ -82438,7 +82438,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mg4",
@@ -82465,7 +82465,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "volvo-ex30",
@@ -82541,7 +82541,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "jac-e30x",
@@ -82568,7 +82568,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "vw-id-3",
@@ -82595,7 +82595,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "tesla-model-3-highland",
@@ -82623,7 +82623,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "byd-seal",
@@ -82650,7 +82650,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-cla",
@@ -82710,7 +82710,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "bmw-i4",
@@ -82737,7 +82737,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "nissan-leaf-2013",
@@ -82764,7 +82764,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "renault-zoe",
@@ -82791,7 +82791,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "ora-07",
@@ -82818,7 +82818,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "ora-good-cat-funky-cat",
@@ -82846,7 +82846,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "porsche-taycan",
@@ -82924,7 +82924,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "bmw-i3",
@@ -83001,7 +83001,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "ligier-myli",
@@ -83021,7 +83021,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "van",
@@ -83060,7 +83060,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "id-buzz-cargo",
@@ -83087,7 +83087,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "nissan-e-nv200-cargo",
@@ -83115,7 +83115,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "id-buzz-5-seater",
@@ -83142,7 +83142,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "mercedes-eqv-7-seater",
@@ -83170,7 +83170,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "kia-ev9-van",
@@ -83190,7 +83190,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "denza-d9",
@@ -83217,7 +83217,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "citroen-e-spacetourer-7-seater",
@@ -83245,7 +83245,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "kia-e-soul-van",
@@ -83275,7 +83275,7 @@
           }
         ]
       },
-      "coverage": 0.07142857142857142
+      "coverage": 0.06666666666666667
     },
     {
       "id": "vw-e-golf-24kwh",
@@ -83333,7 +83333,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "bmw-i3-33kwh",
@@ -83354,7 +83354,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "kia-soul-27kwh",
@@ -83405,7 +83405,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-s-p85-signature",
@@ -83426,7 +83426,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-x-100d",
@@ -83447,7 +83447,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-x-75d",
@@ -83468,7 +83468,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "volvo-c40-awd-78kwh",
@@ -83490,7 +83490,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "tesla-model-s-85d",
@@ -83511,7 +83511,7 @@
           }
         ]
       },
-      "coverage": 0.03571428571428571
+      "coverage": 0.03333333333333333
     },
     {
       "id": "avatr-11-lr",
@@ -83790,6 +83790,26 @@
       "conditioned": true
     },
     {
+      "id": "consumption_90_winter",
+      "label": "Consumption @ 90 (Winter)",
+      "group": "efficiency",
+      "unit": "Wh/km",
+      "direction": "lower-better",
+      "precision": 0,
+      "description": "Energy consumption per km at 90 km/h in winter — cold-weather penalty is visible here.",
+      "conditioned": true
+    },
+    {
+      "id": "consumption_120_winter",
+      "label": "Consumption @ 120 (Winter)",
+      "group": "efficiency",
+      "unit": "Wh/km",
+      "direction": "lower-better",
+      "precision": 0,
+      "description": "Energy consumption per km at 120 km/h in winter — the harshest steady-speed condition Bjørn tests.",
+      "conditioned": true
+    },
+    {
       "id": "battery_capacity",
       "label": "Battery Capacity",
       "group": "battery",
@@ -84016,6 +84036,6 @@
       "flag": "🇩🇪"
     }
   ],
-  "generatedAt": "2026-06-09T16:21:40.406Z",
+  "generatedAt": "2026-06-09T16:44:40.945Z",
   "sourceAttribution": "Test data: Bjørn Nyland (bjornyland.com) — reproduced with attribution. Market overlays: community-maintained, approximate prices pre-incentive."
 }

@@ -4,8 +4,7 @@ import {
   Tooltip, ResponsiveContainer, Label, ReferenceLine,
 } from 'recharts'
 import type { Vehicle, MetricDef, Condition } from '../../lib/types'
-import { getDisplayValue } from '../../lib/metricHelpers'
-import { getVehiclePrice } from '../../lib/markets'
+import { getMetricNumber, getDerivedLabel, REAL_RANGE_ID, REAL_CONSUMPTION_ID } from '../../lib/derived'
 import { formatValue, type UnitSystem } from '../../lib/units'
 import { useAppStore } from '../../store'
 
@@ -68,8 +67,8 @@ const CustomDot = (props: Record<string, unknown>) => {
 }
 
 export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem = 'metric', market }: ScatterViewProps) {
-  const defaultX = metrics.find(m => m.id === 'range_90_summer')?.id ?? metrics[0]?.id ?? ''
-  const defaultY = metrics.find(m => m.id === 'consumption_90_summer')?.id ?? metrics[1]?.id ?? ''
+  const defaultX = metrics.find(m => m.id === REAL_RANGE_ID)?.id ?? metrics[0]?.id ?? ''
+  const defaultY = metrics.find(m => m.id === REAL_CONSUMPTION_ID)?.id ?? metrics[1]?.id ?? ''
 
   const [xMetricId, setXMetricId] = useState(defaultX)
   const [yMetricId, setYMetricId] = useState(defaultY)
@@ -78,9 +77,7 @@ export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem =
   const yMetric = metrics.find(m => m.id === yMetricId)
 
   const metricValue = (v: Vehicle, metricId: string): number | null =>
-    metricId === 'price_usd'
-      ? getVehiclePrice(v.markets, market).sortValue
-      : getDisplayValue(v, metricId, condition)
+    getMetricNumber(v, metricId, condition, market, unitSystem)
 
   const points: ScatterPoint[] = useMemo(() => {
     if (!xMetric || !yMetric) return []
@@ -103,9 +100,8 @@ export function ScatterView({ vehicles, metrics, condition, isDark, unitSystem =
     const { vehicle, x, y, isPareto } = typedPayload[0].payload
 
     const fmt = (metric: MetricDef, val: number) =>
-      metric.id === 'price_usd'
-        ? getVehiclePrice(vehicle.markets, market).label
-        : formatValue(val, metric.unit, metric.precision, unitSystem)
+      getDerivedLabel(vehicle, metric.id, market, unitSystem)
+        ?? formatValue(val, metric.unit, metric.precision, unitSystem)
 
     return (
       <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl p-3 max-w-xs">

@@ -71,10 +71,37 @@ export function About() {
         <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1 list-disc ml-4">
           <li><strong>Summer:</strong> typically 10–28°C, dry or wet roads</li>
           <li><strong>Winter:</strong> typically −15°C to +5°C, winter tires</li>
-          <li>Both 90 km/h (city/highway) and 120 km/h (fast highway) conditions</li>
+          <li>Both 90 km/h (steady highway) and 120 km/h (fast highway) constant-speed runs</li>
         </ul>
         <p className="text-sm text-slate-600 dark:text-slate-400 mt-3">
-          Use the condition switcher to see how your preferred driving conditions affect the rankings.
+          Use the <strong>condition switcher</strong> in the matrix toolbar to re-key the Range and Consumption
+          columns to your preferred speed and season — the rankings update live. Open any vehicle to see its full
+          <strong> Real range by condition</strong> grid.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Reading the tool</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Browse-by presets</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              The chip rail above the matrix is one-click ranking: longest range, most efficient, fastest charging,
+              quickest, best value, and more. Each applies a sort and brings the relevant column into view.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Price / Range (value)</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              Starting price divided by real-world range — what each km (or mile) of range costs you, in the selected
+              market's currency. Lower is better value. It's blank where we don't have a price for that market.
+            </p>
+          </div>
+        </div>
+        <p className="text-xs text-slate-500 dark:text-slate-500 mt-4">
+          The conditional-range presentation, the browse-by rankings, and the price-per-range value cue are inspired by
+          <a href="https://ev-database.org/" className="underline" target="_blank" rel="noopener"> EV Database</a>,
+          adapted to Bjørn Nyland's real-world measurements.
         </p>
       </section>
 

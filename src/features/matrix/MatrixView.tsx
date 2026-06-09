@@ -14,23 +14,26 @@ interface MatrixRowData {
 import { HeatCell } from './HeatCell'
 import { SortRail } from './SortRail'
 import { ColumnPicker } from './ColumnPicker'
+import { ConditionSwitcher } from './ConditionSwitcher'
+import { PresetRail, PRESETS, type Preset } from './PresetRail'
+import { VehicleDetail } from '../detail/VehicleDetail'
 import { computePercentiles } from '../../lib/colors'
-import { getDisplayValue } from '../../lib/metricHelpers'
-import { getVehiclePrice, getPriceHeaderLabel, type PriceInfo } from '../../lib/markets'
+import { getMetricNumber, getDerivedLabel, REAL_RANGE_ID, REAL_CONSUMPTION_ID } from '../../lib/derived'
+import { getPriceHeaderLabel } from '../../lib/markets'
 import { Button } from '../../components/ui/Button'
 import { Tooltip } from '../../components/ui/Tooltip'
 import { useAppStore } from '../../store'
 
 const DEFAULT_METRICS = [
-  'range_90_summer', 'range_120_summer', 'roadtrip_1000km_time',
-  'consumption_90_summer', 'accel_0_100', 'noise_avg',
-  'cargo_trunk', 'weight_kg', 'price_usd',
+  REAL_RANGE_ID, 'roadtrip_1000km_time', 'charge_speed_75pct', REAL_CONSUMPTION_ID,
+  'accel_0_100', 'cargo_trunk', 'weight_kg', 'price_usd', 'price_per_range',
 ]
 
 const SIMPLE_METRICS = [
-  'range_90_summer', 'accel_0_100', 'roadtrip_1000km_time',
-  'consumption_90_summer', 'cargo_trunk', 'price_usd',
+  REAL_RANGE_ID, 'roadtrip_1000km_time', 'accel_0_100', REAL_CONSUMPTION_ID, 'cargo_trunk', 'price_usd',
 ]
+
+const CONDITIONED_REAL = new Set([REAL_RANGE_ID, REAL_CONSUMPTION_ID])
 
 const VEHICLE_COL_W = 220
 const ROW_H = 48
@@ -39,6 +42,7 @@ interface MatrixViewProps {
   vehicles: Vehicle[]
   metrics: MetricDef[]
   condition: Partial<Condition>
+  onConditionChange?: (c: Partial<Condition>) => void
   marketCode: string
   searchQuery: string
   isDark: boolean
@@ -46,19 +50,29 @@ interface MatrixViewProps {
   viewMode?: 'simple' | 'advanced'
 }
 
-export function MatrixView({ vehicles, metrics, condition, marketCode, searchQuery, isDark, unitSystem = 'metric', viewMode = 'advanced' }: MatrixViewProps) {
+export function MatrixView({ vehicles, metrics, condition, onConditionChange, marketCode, searchQuery, isDark, unitSystem = 'metric', viewMode = 'advanced' }: MatrixViewProps) {
   const isSimple = viewMode === 'simple'
   const [sorting, setSorting] = useState<SortingState>([])
   const [visibleMetricIds, setVisibleMetricIds] = useState(DEFAULT_METRICS)
   const [showColumnPicker, setShowColumnPicker] = useState(false)
+  const [detailVehicle, setDetailVehicle] = useState<Vehicle | null>(null)
   const tableRef = useRef<HTMLDivElement>(null)
   const { compareSet, toggleCompare } = useAppStore()
 
-  const activeMetricIds = isSimple ? SIMPLE_METRICS : visibleMetricIds
+  const metricMap = useMemo(() => new Map(metrics.map(m => [m.id, m])), [metrics])
+  const baseMetricIds = isSimple ? SIMPLE_METRICS : visibleMetricIds
+
+  // Any actively-sorted metric must have a column (and thus a value in `data`),
+  // even if it isn't in the user's chosen column set — e.g. a preset sort.
+  const columnMetricIds = useMemo(() => {
+    const ids = [...baseMetricIds]
+    for (const s of sorting) if (s.id !== 'vehicle' && !ids.includes(s.id)) ids.push(s.id)
+    return ids
+  }, [baseMetricIds, sorting])
 
   const visibleMetrics = useMemo(
-    () => metrics.filter(m => activeMetricIds.includes(m.id)),
-    [metrics, activeMetricIds],
+    () => columnMetricIds.map(id => metricMap.get(id)).filter((m): m is MetricDef => !!m),
+    [columnMetricIds, metricMap],
   )
 
   const filteredVehicles = useMemo(() => {
@@ -70,22 +84,13 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
     return vs
   }, [vehicles, searchQuery])
 
-  // Market-aware price (local currency for a specific market, USD range for "All").
-  const priceInfo = useMemo(() => {
-    const map: Record<string, PriceInfo> = {}
-    for (const v of filteredVehicles) map[v.id] = getVehiclePrice(v.markets, marketCode)
-    return map
-  }, [filteredVehicles, marketCode])
-
   const data = useMemo((): MatrixRowData[] => filteredVehicles.map(v => {
     const row: MatrixRowData = { vehicle: v }
     for (const m of visibleMetrics) {
-      row[m.id] = m.id === 'price_usd'
-        ? (priceInfo[v.id]?.sortValue ?? null)
-        : getDisplayValue(v, m.id, condition)
+      row[m.id] = getMetricNumber(v, m.id, condition, marketCode, unitSystem)
     }
     return row
-  }), [filteredVehicles, visibleMetrics, condition, priceInfo])
+  }), [filteredVehicles, visibleMetrics, condition, marketCode, unitSystem])
 
   const percentileMap = useMemo(() => {
     const map: Record<string, Record<string, number | null>> = {}
@@ -132,14 +137,18 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
               >
                 {inCompare && <span className="text-white text-[8px] flex items-center justify-center leading-none">✓</span>}
               </button>
-              <div className="min-w-0">
-                <div className="text-sm font-medium text-slate-900 dark:text-slate-100 truncate">
+              <button
+                className="min-w-0 text-left group"
+                onClick={() => setDetailVehicle(v)}
+                title="View full spec sheet"
+              >
+                <div className="text-sm font-medium text-slate-900 dark:text-slate-100 truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {v.make} {v.model}
                 </div>
                 {v.variant && (
                   <div className="text-xs text-slate-500 dark:text-slate-400 truncate">{v.variant}</div>
                 )}
-              </div>
+              </button>
               {v.coverage > 0 && (
                 <Tooltip content={`Data coverage: ${Math.round(v.coverage * 100)}%`}>
                   <div className="ml-auto flex-shrink-0 w-1 h-6 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
@@ -164,10 +173,10 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
       enableSorting: true,
       cell: ({ row }) => {
         const value = row.original[metric.id] as number | null
-        const vehicleId = (row.original.vehicle as Vehicle).id
-        const percentile = percentileMap[metric.id]?.[vehicleId] ?? null
-        const isBest = bestMap[metric.id] === vehicleId && value !== null
-        const displayOverride = metric.id === 'price_usd' ? priceInfo[vehicleId]?.label : undefined
+        const v = row.original.vehicle as Vehicle
+        const percentile = percentileMap[metric.id]?.[v.id] ?? null
+        const isBest = bestMap[metric.id] === v.id && value !== null
+        const displayOverride = getDerivedLabel(v, metric.id, marketCode, unitSystem)
         return (
           <HeatCell
             value={value}
@@ -182,7 +191,7 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
       },
       size: 130,
     })),
-  ], [visibleMetrics, percentileMap, bestMap, isDark, compareSet, toggleCompare, unitSystem, priceInfo])
+  ], [visibleMetrics, percentileMap, bestMap, isDark, compareSet, toggleCompare, unitSystem, marketCode])
 
   const table = useReactTable({
     data,
@@ -217,8 +226,24 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
     setSorting(prev => prev.map(s => s.id === id ? { ...s, desc: !s.desc } : s))
   }, [])
 
+  const applyPreset = useCallback((p: Preset) => {
+    setSorting([{ id: p.metricId, desc: p.desc }])
+    tableRef.current?.scrollTo({ top: 0 })
+  }, [])
+
+  const activePresetId = useMemo(() => {
+    if (sorting.length !== 1) return null
+    const s = sorting[0]
+    return PRESETS.find(p => p.metricId === s.id && p.desc === s.desc)?.id ?? null
+  }, [sorting])
+
+  const condTag = `${condition.speed === 120 ? 120 : 90}·${condition.season === 'winter' ? 'W' : 'S'}`
+
   return (
     <div className="flex flex-col h-full">
+      {/* Preset leaderboards */}
+      <PresetRail activeId={activePresetId} onApply={applyPreset} />
+
       {/* Controls */}
       <div className="flex items-center gap-2 px-4 py-2 border-b border-slate-200 dark:border-slate-700 flex-wrap">
         {!isSimple && (
@@ -229,6 +254,10 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
             Columns ({visibleMetricIds.length})
           </Button>
         )}
+
+        {/* Condition switcher (EV Database-style conditional range) */}
+        {onConditionChange && <ConditionSwitcher condition={condition} onChange={onConditionChange} />}
+
         <span className="text-xs text-slate-500 dark:text-slate-400">
           {filteredVehicles.length} vehicles
           {!isSimple && sorting.length > 0 && ' · Shift+click header to add sort level'}
@@ -239,7 +268,7 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
           </Button>
         )}
         {isSimple && (
-          <span className="text-xs text-slate-400 dark:text-slate-500 ml-auto">
+          <span className="text-xs text-slate-400 dark:text-slate-500 ml-auto hidden sm:inline">
             Switch to <span className="text-blue-500">Advanced</span> for more columns & sorting
           </span>
         )}
@@ -269,9 +298,10 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
             {table.getHeaderGroups().map(headerGroup => (
               <tr key={headerGroup.id} className="border-b border-slate-200 dark:border-slate-700">
                 {headerGroup.headers.map(header => {
-                  const metric = metrics.find(m => m.id === header.id)
+                  const metric = metricMap.get(header.id)
                   const sortDir = header.column.getIsSorted()
                   const sortIdx = sorting.findIndex(s => s.id === header.id)
+                  const isReal = CONDITIONED_REAL.has(header.id)
                   const headerLabel = header.id === 'vehicle'
                     ? 'Vehicle'
                     : header.id === 'price_usd'
@@ -293,6 +323,11 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
                       <Tooltip content={metric?.description ?? header.id} side="bottom">
                         <span className="flex items-center gap-1 truncate">
                           <span className="truncate">{headerLabel}</span>
+                          {isReal && (
+                            <span className="shrink-0 text-[9px] font-bold text-blue-500 bg-blue-50 dark:bg-blue-950/50 rounded px-1 py-0.5" title="Active condition">
+                              {condTag}
+                            </span>
+                          )}
                           {sortDir && (
                             <span className="text-blue-500 shrink-0">
                               {sortDir === 'asc' ? '↑' : '↓'}
@@ -348,6 +383,17 @@ export function MatrixView({ vehicles, metrics, condition, marketCode, searchQue
           visible={visibleMetricIds}
           onChange={setVisibleMetricIds}
           onClose={() => setShowColumnPicker(false)}
+        />
+      )}
+
+      {detailVehicle && (
+        <VehicleDetail
+          vehicle={detailVehicle}
+          metrics={metrics}
+          condition={condition}
+          market={marketCode}
+          unitSystem={unitSystem}
+          onClose={() => setDetailVehicle(null)}
         />
       )}
     </div>

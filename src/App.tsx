@@ -29,7 +29,7 @@ function AppContent() {
 
   const unitSystem: UnitSystem = getUnitSystem(market)
 
-  const [condition] = useState<Partial<Condition>>({
+  const [condition, setCondition] = useState<Partial<Condition>>({
     speed: 90,
     season: 'summer',
   })
@@ -38,6 +38,9 @@ function AppContent() {
     search: '',
     makes: [],
     drivetrains: [],
+    bodyTypes: [],
+    segments: [],
+    availability: [],
   })
 
   useEffect(() => {
@@ -86,11 +89,16 @@ function AppContent() {
     }
     if (filters.makes.length > 0 && !filters.makes.includes(v.make)) return false
     if (filters.drivetrains.length > 0 && (!v.drivetrain || !filters.drivetrains.includes(v.drivetrain))) return false
-    // Selecting a specific market filters to vehicles available (or upcoming) there.
-    // "All markets" shows every EV regardless of availability.
+    if (filters.bodyTypes.length > 0 && (!v.bodyType || !filters.bodyTypes.includes(v.bodyType))) return false
+    if (filters.segments.length > 0 && (!v.segment || !filters.segments.includes(v.segment))) return false
+    // Selecting a specific market filters to vehicles sold there. By default that
+    // means available + upcoming; the availability filter can widen it (e.g. include
+    // discontinued). "All markets" shows every EV regardless of availability.
     if (market !== ALL_MARKET) {
       const mkt = v.markets?.[market as 'US' | 'UK' | 'DE']
-      if (!mkt || (mkt.available !== 'available' && mkt.available !== 'upcoming')) return false
+      if (!mkt) return false
+      const statuses = filters.availability.length > 0 ? filters.availability : ['available', 'upcoming']
+      if (!statuses.includes(mkt.available)) return false
     }
     return true
   })
@@ -131,6 +139,7 @@ function AppContent() {
               filters={filters}
               onChange={setFilters}
               viewMode={viewMode}
+              market={market}
             />
             <ScatterView
               vehicles={filteredVehicles}
@@ -150,11 +159,13 @@ function AppContent() {
               filters={filters}
               onChange={setFilters}
               viewMode={viewMode}
+              market={market}
             />
             <MatrixView
               vehicles={filteredVehicles}
               metrics={metrics}
               condition={condition}
+              onConditionChange={setCondition}
               marketCode={market}
               searchQuery={filters.search}
               isDark={isDark}

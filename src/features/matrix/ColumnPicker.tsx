@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { MetricDef, MetricGroup } from '../../lib/types'
 import { Button } from '../../components/ui/Button'
+import { REAL_RANGE_ID, REAL_CONSUMPTION_ID, PRICE_PER_RANGE_ID } from '../../lib/derived'
 
 const GROUP_LABELS: Record<MetricGroup, string> = {
   range: 'Range', efficiency: 'Efficiency', charging: 'Charging',
@@ -9,10 +10,11 @@ const GROUP_LABELS: Record<MetricGroup, string> = {
 }
 
 const PRESETS: Record<string, string[]> = {
-  'Road-trip': ['range_90_summer', 'roadtrip_1000km_time', 'roadtrip_avg_speed', 'charge_time_75pct', 'price_usd'],
-  'Performance': ['accel_0_100', 'hp', 'weight_kg', 'braking_distance'],
-  'Efficiency': ['consumption_90_summer', 'consumption_120_summer', 'range_90_summer', 'range_120_summer'],
+  'Road-trip': [REAL_RANGE_ID, 'roadtrip_1000km_time', 'roadtrip_avg_speed', 'charge_speed_75pct', 'price_usd'],
+  'Performance': ['accel_0_100', 'accel_0_100_1ft', 'hp', 'weight_kg', 'braking_distance'],
+  'Efficiency': [REAL_CONSUMPTION_ID, REAL_RANGE_ID, 'battery_capacity', 'charge_speed_75pct'],
   'Family': ['cargo_trunk', 'cargo_seats_folded', 'noise_avg', 'weight_kg', 'price_usd'],
+  'Value': [REAL_RANGE_ID, 'price_usd', PRICE_PER_RANGE_ID, 'charge_speed_75pct'],
 }
 
 interface ColumnPickerProps {

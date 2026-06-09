@@ -33,6 +33,16 @@ export const METRIC_DEFS: MetricDef[] = [
     description: 'Energy consumption per km at 120 km/h in summer.',
   },
   {
+    id: 'consumption_90_winter', label: 'Consumption @ 90 (Winter)', group: 'efficiency',
+    unit: 'Wh/km', direction: 'lower-better', precision: 0, conditioned: true,
+    description: 'Energy consumption per km at 90 km/h in winter — cold-weather penalty is visible here.',
+  },
+  {
+    id: 'consumption_120_winter', label: 'Consumption @ 120 (Winter)', group: 'efficiency',
+    unit: 'Wh/km', direction: 'lower-better', precision: 0, conditioned: true,
+    description: 'Energy consumption per km at 120 km/h in winter — the harshest steady-speed condition Bjørn tests.',
+  },
+  {
     id: 'battery_capacity', label: 'Battery Capacity', group: 'battery',
     unit: 'kWh', direction: 'higher-better', precision: 1,
     description: 'Usable battery capacity as measured during the test.',
