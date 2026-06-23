@@ -15,15 +15,20 @@ interface HeaderProps {
 }
 
 const NAV = [
-  { to: '/', label: 'Matrix' },
+  { to: '/matrix', label: 'Matrix' },
   { to: '/scatter', label: 'Scatter' },
   { to: '/compare', label: 'Compare' },
+  { to: '/guides', label: 'Guides' },
   { to: '/about', label: 'About' },
 ]
 
 export function Header({ isDark, onToggleDark, market, onMarketChange, viewMode, onToggleViewMode }: HeaderProps) {
   const location = useLocation()
   const { compareSet } = useAppStore()
+
+  // The simple/advanced toggle only affects the matrix and scatter tool views,
+  // so hide it on content pages where it would be confusing, irrelevant chrome.
+  const showViewMode = location.pathname.startsWith('/matrix') || location.pathname.startsWith('/scatter')
 
   return (
     <header className="h-14 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center px-4 gap-4 shrink-0 z-30">
@@ -36,15 +41,15 @@ export function Header({ isDark, onToggleDark, market, onMarketChange, viewMode,
       </Link>
 
       {/* Nav */}
-      <nav className="flex items-center gap-1">
+      <nav className="flex items-center gap-1 overflow-x-auto scrollbar-thin">
         {NAV.map(({ to, label }) => {
-          const active = to === '/' ? location.pathname === '/' : location.pathname.startsWith(to)
+          const active = location.pathname === to || location.pathname.startsWith(to + '/')
           return (
             <Link
               key={to}
               to={to}
               className={clsx(
-                'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors relative',
+                'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors relative shrink-0 whitespace-nowrap',
                 active
                   ? 'bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-400'
                   : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800',
@@ -62,7 +67,8 @@ export function Header({ isDark, onToggleDark, market, onMarketChange, viewMode,
       </nav>
 
       <div className="ml-auto flex items-center gap-2">
-        {/* View mode toggle */}
+        {/* View mode toggle (tool views only) */}
+        {showViewMode && (
         <div className="flex items-center p-0.5 bg-slate-100 dark:bg-slate-800 rounded-lg">
           {(['simple', 'advanced'] as ViewMode[]).map(mode => (
             <button
@@ -79,6 +85,7 @@ export function Header({ isDark, onToggleDark, market, onMarketChange, viewMode,
             </button>
           ))}
         </div>
+        )}
 
         {/* Market selector */}
         <select

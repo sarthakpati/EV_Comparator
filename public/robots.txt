@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evcomparator.up.railway.app/sitemap.xml

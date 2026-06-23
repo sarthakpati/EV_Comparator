@@ -1,14 +1,17 @@
-import { AdUnit } from '../components/ads/AdUnit'
-import { AD_SLOTS } from '../lib/ads'
+import { Link } from 'react-router-dom'
+import { ContentLayout } from '../components/ContentLayout'
+import { ContentAd } from '../components/ads/ContentAd'
 
 export function About() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12 prose prose-slate dark:prose-invert">
-      <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2">About & Methodology</h1>
-      <p className="text-slate-500 dark:text-slate-400 text-sm mb-8">Data provenance, test conditions, and how to contribute</p>
-
+    <ContentLayout
+      title="About & methodology"
+      description="Data provenance, test conditions, and how to read EV Comparator — built on Bjørn Nyland’s real-world EV test data."
+      path="/about"
+      lead="Data provenance, test conditions, and how to read the tool."
+    >
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Data Source</h2>
+        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Data source</h2>
         <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-4">
           <p className="text-sm text-amber-800 dark:text-amber-300 font-medium">
             ⚡ Test data: © <strong>Bjørn Nyland</strong> — reproduced with attribution.
@@ -16,18 +19,18 @@ export function About() {
           <p className="text-xs text-amber-700 dark:text-amber-400 mt-1">
             Bjørn Nyland is one of the most respected independent EV reviewers in the world, based in Norway. His systematic,
             real-world tests have been running since 2015. All performance data in this tool comes from his published spreadsheet.
-            Visit his channel and support his work: <a href="https://www.youtube.com/@BjornNyland" className="underline" target="_blank" rel="noopener">YouTube</a>.
+            Visit his channel and support his work: <a href="https://www.youtube.com/@BjornNyland" className="underline" target="_blank" rel="noopener noreferrer">YouTube</a>.
           </p>
         </div>
         <p className="text-sm text-slate-600 dark:text-slate-400">
-          Market overlay data (prices, launch dates, availability) is community-maintained and approximate —
-          see <code className="text-xs bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">data/usa.md</code> and similar files.
-          MSRPs are starting prices, pre-incentive, for informational purposes only.
+          Market overlay data (prices, launch dates, availability) is community-maintained and approximate.
+          MSRPs are starting prices, pre-incentive, for informational purposes only. This is an independent project and is
+          not affiliated with or endorsed by Bjørn Nyland or any manufacturer.
         </p>
       </section>
 
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Test Metrics Explained</h2>
+        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Test metrics explained</h2>
         <div className="space-y-4">
           <div>
             <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Range @ 90 / 120 km/h</h3>
@@ -37,44 +40,43 @@ export function About() {
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">1000 km Road Trip Time</h3>
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">1000 km road trip time</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">
-              Bjørn's flagship benchmark: the total real-world time to drive 1000 km from Oslo to Aurland and back, including all
-              necessary charging stops. Lower is better. This is the gold-standard real-world long-distance metric.
+              Bjørn's flagship benchmark: the total real-world time to drive 1000 km including all necessary charging stops.
+              Lower is better. This is the gold-standard real-world long-distance metric.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">75% Charging Metrics</h3>
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">75% charging metrics</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">
               75% km/h = effective trip speed when you factor in charge time: (range to 75% SoC) ÷ (time to charge to 75%).
               This combines range and charging speed into a single road-trip efficiency number.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Banana Boxes (Cargo)</h3>
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Banana boxes (cargo)</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">
               Bjørn's signature cargo unit. A standard banana box (~40 cm × 30 cm × 24 cm) provides a
               repeatable, real-world measurement of cargo volume — more meaningful than manufacturer-quoted liters.
             </p>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Noise Levels</h3>
+            <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-300">Noise levels</h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">
               Cabin noise in dB measured at 80, 100, and 120 km/h cruise on Norwegian highways. Recorded at the driver's ear position.
             </p>
           </div>
         </div>
+        <p className="text-sm text-slate-600 dark:text-slate-400 mt-4">
+          For deeper explanations, see the <Link to="/guides" className="text-blue-600 dark:text-blue-400 hover:underline">guides</Link>{' '}
+          and the <Link to="/glossary" className="text-blue-600 dark:text-blue-400 hover:underline">glossary</Link>.
+        </p>
       </section>
 
-      {AD_SLOTS.aboutInline && (
-        <div className="my-10">
-          <p className="text-[10px] uppercase tracking-wider text-slate-400 text-center mb-1">Advertisement</p>
-          <AdUnit slot={AD_SLOTS.aboutInline} />
-        </div>
-      )}
+      <ContentAd name="aboutInline" />
 
       <section className="mb-10">
-        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Data Conditions</h2>
+        <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-3">Data conditions</h2>
         <p className="text-sm text-slate-600 dark:text-slate-400 mb-3">
           Range and efficiency vary significantly with conditions. This tool shows:
         </p>
@@ -110,7 +112,7 @@ export function About() {
         </div>
         <p className="text-xs text-slate-500 dark:text-slate-500 mt-4">
           The conditional-range presentation, the browse-by rankings, and the price-per-range value cue are inspired by
-          <a href="https://ev-database.org/" className="underline" target="_blank" rel="noopener"> EV Database</a>,
+          <a href="https://ev-database.org/" className="underline" target="_blank" rel="noopener noreferrer"> EV Database</a>,
           adapted to Bjørn Nyland's real-world measurements.
         </p>
       </section>
@@ -133,13 +135,11 @@ export function About() {
         <p className="text-sm text-slate-600 dark:text-slate-400">
           Application code: MIT License. Test data: © Bjørn Nyland, reproduced with attribution.
           Market overlay data: community-contributed, approximate values — not financial or purchasing advice.
-          Always verify prices with the manufacturer before making a purchase decision.
+          Always verify prices with the manufacturer before making a purchase decision. See also our{' '}
+          <Link to="/privacy" className="text-blue-600 dark:text-blue-400 hover:underline">privacy policy</Link> and{' '}
+          <Link to="/terms" className="text-blue-600 dark:text-blue-400 hover:underline">terms</Link>.
         </p>
       </section>
-
-      <footer className="text-xs text-slate-400 border-t border-slate-200 dark:border-slate-700 pt-6 mt-8">
-        <p>EV Comparator · Open source · Data from Bjørn Nyland's independent tests</p>
-      </footer>
-    </div>
+    </ContentLayout>
   )
 }

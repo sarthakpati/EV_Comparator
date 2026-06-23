@@ -6,6 +6,15 @@ import { ScatterView } from './features/scatter/ScatterView'
 import { CompareView } from './features/compare/CompareView'
 import { FilterBar, type FilterState } from './features/filters/FilterBar'
 import { About } from './app/About'
+import { Home } from './app/Home'
+import { Faq } from './app/Faq'
+import { Glossary } from './app/Glossary'
+import { Privacy } from './app/Privacy'
+import { Terms } from './app/Terms'
+import { NotFound } from './app/NotFound'
+import { GuidesIndex } from './features/guides/GuidesIndex'
+import { GuidePage } from './features/guides/GuidePage'
+import { Seo } from './components/Seo'
 import { Spinner } from './components/ui/Spinner'
 import { useAppStore } from './store'
 import { loadDataset } from './lib/data'
@@ -114,45 +123,24 @@ function AppContent() {
         onToggleViewMode={() => setViewMode(v => v === 'simple' ? 'advanced' : 'simple')}
       />
       <Routes>
-        <Route path="/about" element={
-          <main className="flex-1 overflow-auto">
-            <About />
-          </main>
-        } />
-        <Route path="/compare" element={
-          <main className="flex-1 overflow-hidden">
-            <CompareView
-              vehicles={vehicles}
-              metrics={metrics}
-              condition={condition}
-              isDark={isDark}
-              unitSystem={unitSystem}
-              market={market}
-            />
-          </main>
-        } />
-        <Route path="/scatter" element={
+        {/* Content pages — each renders its own <main> (scrollable, with footer + SEO). */}
+        <Route path="/" element={<Home vehicles={vehicles} unitSystem={unitSystem} market={market} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/guides" element={<GuidesIndex />} />
+        <Route path="/guides/:slug" element={<GuidePage vehicles={vehicles} unitSystem={unitSystem} market={market} />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/glossary" element={<Glossary />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+
+        {/* Interactive tool views — fixed-height app shell, no ads. */}
+        <Route path="/matrix" element={
           <main className="flex-1 overflow-hidden flex flex-col">
-            <FilterBar
-              vehicles={vehicles}
-              metrics={metrics}
-              filters={filters}
-              onChange={setFilters}
-              viewMode={viewMode}
-              market={market}
+            <Seo
+              title="EV comparison matrix"
+              description="Compare every electric car across range, charging, efficiency, performance and price in one sortable, heatmap matrix."
+              path="/matrix"
             />
-            <ScatterView
-              vehicles={filteredVehicles}
-              metrics={metrics}
-              condition={condition}
-              isDark={isDark}
-              unitSystem={unitSystem}
-              market={market}
-            />
-          </main>
-        } />
-        <Route path="*" element={
-          <main className="flex-1 overflow-hidden flex flex-col">
             <FilterBar
               vehicles={vehicles}
               metrics={metrics}
@@ -174,6 +162,50 @@ function AppContent() {
             />
           </main>
         } />
+        <Route path="/scatter" element={
+          <main className="flex-1 overflow-hidden flex flex-col">
+            <Seo
+              title="EV scatter & Pareto chart"
+              description="Plot any two EV metrics against each other and see the Pareto frontier of the best real-world trade-offs."
+              path="/scatter"
+            />
+            <FilterBar
+              vehicles={vehicles}
+              metrics={metrics}
+              filters={filters}
+              onChange={setFilters}
+              viewMode={viewMode}
+              market={market}
+            />
+            <ScatterView
+              vehicles={filteredVehicles}
+              metrics={metrics}
+              condition={condition}
+              isDark={isDark}
+              unitSystem={unitSystem}
+              market={market}
+            />
+          </main>
+        } />
+        <Route path="/compare" element={
+          <main className="flex-1 overflow-hidden">
+            <Seo
+              title="Compare EVs side by side"
+              description="Pin up to five electric cars and compare them side by side with a radar chart across every real-world metric."
+              path="/compare"
+            />
+            <CompareView
+              vehicles={vehicles}
+              metrics={metrics}
+              condition={condition}
+              isDark={isDark}
+              unitSystem={unitSystem}
+              market={market}
+            />
+          </main>
+        } />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   )

@@ -35,6 +35,56 @@
   }
 }
 
+@layer components {
+  /* Long-form article styling. Scoped class (not Tailwind's `prose`, which needs the
+     typography plugin that this project does not install) so it works standalone and
+     does not affect the explicitly-styled About page. */
+  .article-content {
+    @apply text-[15px] md:text-base text-slate-600 dark:text-slate-300;
+  }
+  .article-content > * + * {
+    @apply mt-4;
+  }
+  .article-content h2 {
+    @apply text-2xl font-bold text-slate-900 dark:text-slate-100 mt-10 mb-4 scroll-mt-24;
+  }
+  .article-content h3 {
+    @apply text-lg font-semibold text-slate-800 dark:text-slate-200 mt-8 mb-2;
+  }
+  .article-content p {
+    @apply leading-relaxed;
+  }
+  .article-content a {
+    @apply text-blue-600 dark:text-blue-400 underline underline-offset-2 hover:no-underline;
+  }
+  .article-content strong {
+    @apply font-semibold text-slate-800 dark:text-slate-200;
+  }
+  .article-content ul {
+    @apply list-disc pl-5 space-y-2;
+  }
+  .article-content ol {
+    @apply list-decimal pl-5 space-y-2;
+  }
+  .article-content li {
+    @apply leading-relaxed;
+  }
+  .article-content li > ul,
+  .article-content li > ol {
+    @apply mt-2;
+  }
+  .article-content blockquote {
+    @apply border-l-4 border-blue-200 dark:border-blue-900/60 pl-4 italic text-slate-500 dark:text-slate-400;
+  }
+  .article-content code {
+    @apply text-sm bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded font-mono;
+  }
+  .article-content h2 + p,
+  .article-content h3 + p {
+    @apply mt-2;
+  }
+}
+
 @layer utilities {
   .tabular-nums {
     font-variant-numeric: tabular-nums;
